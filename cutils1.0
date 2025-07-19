@@ -1,0 +1,414 @@
+-- Gui to Lua
+-- Version: 3.6
+
+-- Instances:
+
+local ctil = Instance.new("ScreenGui")
+local base = Instance.new("Frame")
+local maincontents = Instance.new("Frame")
+local logexecname = Instance.new("TextButton")
+local outlineallhrp = Instance.new("TextButton")
+local logallplrs = Instance.new("TextButton")
+local logallplrswnohrp = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local outlineallparts = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local TextLabel_3 = Instance.new("TextLabel")
+local iy = Instance.new("TextButton")
+local na = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+
+-- Properties:
+
+ctil.Name = "ctil"
+ctil.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ctil.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ctil.ResetOnSpawn = false
+
+base.Name = "base"
+base.Parent = ctil
+base.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+base.BorderColor3 = Color3.fromRGB(0, 0, 0)
+base.Position = UDim2.new(0.126112759, 0, 0.345477372, 0)
+base.Size = UDim2.new(0, 574, 0, 28)
+
+maincontents.Name = "maincontents"
+maincontents.Parent = base
+maincontents.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+maincontents.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maincontents.Position = UDim2.new(0, 0, 0.977057338, 0)
+maincontents.Size = UDim2.new(0, 574, 0, 350)
+
+logexecname.Name = "logexecname"
+logexecname.Parent = maincontents
+logexecname.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+logexecname.BorderColor3 = Color3.fromRGB(0, 0, 0)
+logexecname.Position = UDim2.new(0.00890416838, 0, 0.0490848199, 0)
+logexecname.Size = UDim2.new(0, 223, 0, 15)
+logexecname.Font = Enum.Font.Arial
+logexecname.Text = "Log Executor Name"
+logexecname.TextColor3 = Color3.fromRGB(255, 255, 255)
+logexecname.TextSize = 14.000
+
+outlineallhrp.Name = "outlineallhrp"
+outlineallhrp.Parent = maincontents
+outlineallhrp.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+outlineallhrp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+outlineallhrp.Position = UDim2.new(0.00727248751, 0, 0.297321439, 0)
+outlineallhrp.Size = UDim2.new(0, 223, 0, 15)
+outlineallhrp.Font = Enum.Font.Arial
+outlineallhrp.Text = "Outline Alll HRP (HumanoidRootPart)"
+outlineallhrp.TextColor3 = Color3.fromRGB(255, 255, 255)
+outlineallhrp.TextSize = 14.000
+
+logallplrs.Name = "logallplrs"
+logallplrs.Parent = maincontents
+logallplrs.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+logallplrs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+logallplrs.Position = UDim2.new(0.00890416838, 0, 0.122544646, 0)
+logallplrs.Size = UDim2.new(0, 223, 0, 15)
+logallplrs.Font = Enum.Font.Arial
+logallplrs.Text = "Log All Players"
+logallplrs.TextColor3 = Color3.fromRGB(255, 255, 255)
+logallplrs.TextSize = 14.000
+
+logallplrswnohrp.Name = "logallplrswnohrp"
+logallplrswnohrp.Parent = maincontents
+logallplrswnohrp.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+logallplrswnohrp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+logallplrswnohrp.Position = UDim2.new(0.00890416838, 0, 0.187433034, 0)
+logallplrswnohrp.Size = UDim2.new(0, 223, 0, 15)
+logallplrswnohrp.Font = Enum.Font.Arial
+logallplrswnohrp.Text = "Log All Players With No HRP"
+logallplrswnohrp.TextColor3 = Color3.fromRGB(255, 255, 255)
+logallplrswnohrp.TextSize = 14.000
+
+TextLabel.Parent = maincontents
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000690340588, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 239, 0, 18)
+TextLabel.Font = Enum.Font.Arial
+TextLabel.Text = "Log"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = maincontents
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.00613775477, 0, 0.24660714, 0)
+TextLabel_2.Size = UDim2.new(0, 239, 0, 18)
+TextLabel_2.Font = Enum.Font.Arial
+TextLabel_2.Text = "Outline"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+outlineallparts.Name = "outlineallparts"
+outlineallparts.Parent = maincontents
+outlineallparts.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+outlineallparts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+outlineallparts.Position = UDim2.new(0.00727248751, 0, 0.358593762, 0)
+outlineallparts.Size = UDim2.new(0, 223, 0, 15)
+outlineallparts.Font = Enum.Font.Arial
+outlineallparts.Text = "Outline Alll Parts"
+outlineallparts.TextColor3 = Color3.fromRGB(255, 255, 255)
+outlineallparts.TextSize = 14.000
+
+ScrollingFrame.Parent = maincontents
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.Position = UDim2.new(0.722996533, 0, 0.00183541432, 0)
+ScrollingFrame.Size = UDim2.new(0, 159, 0, 349)
+ScrollingFrame.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+TextBox.Parent = ScrollingFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 146, 1, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.RobotoMono
+TextBox.MultiLine = true
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_3.Parent = maincontents
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.000911274052, 0, 0.423750013, 0)
+TextLabel_3.Size = UDim2.new(0, 239, 0, 18)
+TextLabel_3.Font = Enum.Font.Arial
+TextLabel_3.Text = "Scripts"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+iy.Name = "iy"
+iy.Parent = maincontents
+iy.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+iy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+iy.Position = UDim2.new(0.00727248751, 0, 0.475736618, 0)
+iy.Size = UDim2.new(0, 223, 0, 15)
+iy.Font = Enum.Font.Arial
+iy.Text = "Infinite Yield"
+iy.TextColor3 = Color3.fromRGB(255, 255, 255)
+iy.TextSize = 14.000
+
+na.Name = "na"
+na.Parent = maincontents
+na.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+na.BorderColor3 = Color3.fromRGB(0, 0, 0)
+na.Position = UDim2.new(0.00727248751, 0, 0.53573662, 0)
+na.Size = UDim2.new(0, 223, 0, 15)
+na.Font = Enum.Font.Arial
+na.Text = "Nameless Admin"
+na.TextColor3 = Color3.fromRGB(255, 255, 255)
+na.TextSize = 14.000
+
+TextButton.Parent = base
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.94773519, 0, -0.0357142873, 0)
+TextButton.Size = UDim2.new(0, 30, 0, 28)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "x"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 25.000
+TextButton.TextStrokeTransparency = 0.000
+
+TextLabel_4.Parent = base
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Size = UDim2.new(0, 543, 0, 27)
+TextLabel_4.Font = Enum.Font.Arial
+TextLabel_4.Text = "CUtil"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 19.000
+
+-- Scripts:
+
+local function YKDZNOK_fake_script() -- base.LocalScript 
+	local script = Instance.new('LocalScript', base)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(YKDZNOK_fake_script)()
+local function RVRRNZ_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local on = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if on == false then
+			on = true
+			script.Parent.Parent.maincontents.Visible = false
+			script.Parent.BackgroundColor3 =Color3.new(0,1,0)
+			script.Parent.Text = 'o'
+		else
+			on = false
+			script.Parent.Parent.maincontents.Visible = true
+			script.Parent.BackgroundColor3 = Color3.new(1,0,0)
+			script.Parent.Text = 'x'
+		end
+	end)
+end
+coroutine.wrap(RVRRNZ_fake_script)()
+local function YUSCFV_fake_script() -- ctil.main 
+	local script = Instance.new('LocalScript', ctil)
+
+	-- CUtil main script!
+	local base = script.Parent.base
+	local gui = script.Parent
+	local contents = base.maincontents
+	
+	local outlinedallhrp = false
+	local outlinedallparts = false
+	
+	local function log(...)
+		local message = table.concat({...}, " ")
+		print(message)
+	
+		local txtlogBase = contents.ScrollingFrame.TextBox
+		txtlogBase.Text = txtlogBase.Text .. "\n" .. message
+	end
+	
+	local function getIfCusCilentEnv()
+		local exec_name = (getexecutor or getexecutorname or getidentityexecutor or identifyexecutor or function() return 'Unknown' end)()
+		return exec_name
+	end
+	
+	log('Welcome to CUtil, This is the CUtil Logs.')
+	
+	log('Getting Executor...')
+	wait(1.5)
+	local msg
+	
+	if getIfCusCilentEnv() == 'Delta' then
+		msg = '[OP] Delta, 100sUnc'
+	else
+		msg = '[IDK] ' .. getIfCusCilentEnv()
+	end
+	
+	log(msg)
+	
+	
+	contents.logexecname.MouseButton1Click:Connect(function()
+		log('Executor Name: ' .. getIfCusCilentEnv())
+	end)
+	
+	
+	
+	contents.outlineallhrp.MouseButton1Click:Connect(function()
+		if outlinedallhrp == false then
+			outlinedallhrp = true
+			contents.outlineallhrp.Text = 'Unoutline All HumanoidRootPart'
+	
+			for _, v in pairs(workspace:GetDescendants()) do
+				if v.Name == "HumanoidRootPart" and v:IsA("BasePart") then
+					local highlight = Instance.new('SelectionBox')
+					highlight.Color3 = Color3.new(1,1,1)
+					highlight.Adornee = v
+					highlight.Name = "CUtil_HRP_Highlight"
+					highlight.Parent = v
+					highlight:Clone().Parent= v
+					highlight:Clone().Parent = v
+				end
+			end
+		else
+			outlinedallhrp = false
+			contents.outlineallhrp.Text = 'Outline All HumanoidRootPart'
+	
+			for _, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("SelectionBox") and v.Name == "CUtil_HRP_Highlight" then
+					v:Destroy()
+				end
+			end
+		end
+	end)
+	
+	contents.logallplrs.MouseButton1Click:Connect(function()
+		log('\nAll players:')
+		for _, v in pairs(game.Players:GetPlayers()) do
+			log(v.DisplayName .. " (@" .. v.Name .. ")")
+		end
+	end)
+	
+	contents.logallplrswnohrp.MouseButton1Click:Connect(function()
+		log('\nAll players with no HRP:')
+		for _, v in pairs(game.Players:GetPlayers()) do
+			if not v.Character:FindFirstChild("HumanoidRootPart") then
+				log(v.DisplayName .. " (@" .. v.Name .. ")")
+			end
+		end
+	end)
+	
+	contents.outlineallparts.MouseButton1Click:Connect(function()
+		if outlinedallparts == false then
+			for _, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					local highlight = Instance.new('SelectionBox')
+					highlight.Color3 = Color3.new(1,1,1)
+					highlight.Adornee = v
+					highlight.Name = "CUtil_Part_Highlight"
+					highlight.Parent = v
+					highlight:Clone().Parent= v
+					highlight:Clone().Parent = v
+				end
+			end
+			outlinedallparts = true
+			contents.outlineallparts.Text = 'Unoutline All Parts'
+		else
+			for _, v in pairs(workspace:GetDescendants()) do
+				if v:IsA("SelectionBox") and v.Name == "CUtil_Part_Highlight" then
+					v:Destroy()
+				end
+			end
+			outlinedallparts = false
+			contents.outlineallparts.Text = 'Outline All Parts'
+		end
+	end)
+	
+	contents.iy.MouseButton1Click:Connect(function()
+		local a,b = pcall(function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		end)
+		if not a then
+			local exec = getIfCusCilentEnv()
+			if exec == 'Unknown' then
+				log('You are not on a Modified Cilent!')
+			else
+				log('It seems like you are on an executor but it errors, Do you have an low sUnc/Unc?')
+			end
+		end
+	end)
+	
+	contents.na.MouseButton1Click:Connect(function()
+		local a,b = pcall(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/Nameless-Admin/main/Source.lua"))()
+		end)
+		if not a then
+			local exec = getIfCusCilentEnv()
+			if exec == 'Unknown' then
+				log('You are not on a Modified Cilent!')
+			else
+				log('It seems like you are on an executor but it errors, Do you have an low sUnc/Unc?')
+			end
+		end
+	end)
+end
+coroutine.wrap(YUSCFV_fake_script)()
