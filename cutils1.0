@@ -425,7 +425,7 @@ local function REBAIE_fake_script() -- ctil.main
 	
 	contents.rox6.MouseButton1Click:Connect(function()
 		local a,b = pcall(function()
-			loadstring(game:HttpGet("https://github.com/LuaGunsX/LuasLegacyScripts/blob/main/%5BGUI%5D%20Ro-Xploit%206.0"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/RIPg00by/Ro-Xploit-6.0/refs/heads/main/Script"))()
 		end)
 		if not a then
 			local exec = getIfCusCilentEnv()
