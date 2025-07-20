@@ -1,3 +1,63 @@
+-- Cilent Util v1.1
+-- open sourced
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 -- Gui to Lua
 -- Version: 3.6
 
@@ -204,7 +264,7 @@ TextLabel_4.TextSize = 19.000
 
 -- Scripts:
 
-local function YKDZNOK_fake_script() -- base.LocalScript 
+local function HWLLP_fake_script() -- base.LocalScript 
 	local script = Instance.new('LocalScript', base)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -247,8 +307,8 @@ local function YKDZNOK_fake_script() -- base.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YKDZNOK_fake_script)()
-local function RVRRNZ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(HWLLP_fake_script)()
+local function MZINVGY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local on = false
@@ -267,8 +327,8 @@ local function RVRRNZ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RVRRNZ_fake_script)()
-local function YUSCFV_fake_script() -- ctil.main 
+coroutine.wrap(MZINVGY_fake_script)()
+local function HIWGW_fake_script() -- ctil.main 
 	local script = Instance.new('LocalScript', ctil)
 
 	-- CUtil main script!
@@ -321,7 +381,7 @@ local function YUSCFV_fake_script() -- ctil.main
 			for _, v in pairs(workspace:GetDescendants()) do
 				if v.Name == "HumanoidRootPart" and v:IsA("BasePart") then
 					local highlight = Instance.new('SelectionBox')
-					highlight.Color3 = Color3.new(1,1,1)
+					highlight.Color3 = v.Color
 					highlight.Adornee = v
 					highlight.Name = "CUtil_HRP_Highlight"
 					highlight.Parent = v
@@ -362,7 +422,7 @@ local function YUSCFV_fake_script() -- ctil.main
 			for _, v in pairs(workspace:GetDescendants()) do
 				if v:IsA("BasePart") then
 					local highlight = Instance.new('SelectionBox')
-					highlight.Color3 = Color3.new(1,1,1)
+					highlight.Color3 = v.Color
 					highlight.Adornee = v
 					highlight.Name = "CUtil_Part_Highlight"
 					highlight.Parent = v
@@ -411,4 +471,4 @@ local function YUSCFV_fake_script() -- ctil.main
 		end
 	end)
 end
-coroutine.wrap(YUSCFV_fake_script)()
+coroutine.wrap(HIWGW_fake_script)()
