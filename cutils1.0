@@ -312,6 +312,16 @@ local function REBAIE_fake_script() -- ctil.main
 	
 	if getIfCusCilentEnv() == 'Delta' then
 		msg = '[OP] Delta, 100sUnc'
+	elseif getIfCusCilentEnv() == 'Xeno' then
+		msg = '[MID] Xeno, 81unc/41sunc'
+	elseif getIfCusCilentEnv() == 'Velocity' then
+		msg = '[OP] Velocity, 99unc/90sUnc'
+	elseif getIfCusCilentEnv() == 'Zenith' then
+		msg = '[OP] Zenith, 99unc/100sUnc'
+	elseif getIfCusCilentEnv() == 'Awp' then
+		msg = '[OP] Awp, 99unc/98sUnc'
+	elseif getIfCusCilentEnv() == 'Wave' then
+		msg = '[OP] Wave, 99unc/100sUnc'
 	else
 		msg = '[IDK] ' .. getIfCusCilentEnv()
 	end
