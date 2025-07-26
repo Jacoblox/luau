@@ -19,6 +19,7 @@ local TextLabel_3 = Instance.new("TextLabel")
 local iy = Instance.new("TextButton")
 local na = Instance.new("TextButton")
 local rox6 = Instance.new("TextButton")
+local fbyp = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
 
@@ -191,6 +192,17 @@ rox6.Text = "Ro-Xploit 6.0"
 rox6.TextColor3 = Color3.fromRGB(255, 255, 255)
 rox6.TextSize = 14.000
 
+fbyp.Name = "fbyp"
+fbyp.Parent = maincontents
+fbyp.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+fbyp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fbyp.Position = UDim2.new(0.00727248751, 0, 0.661450922, 0)
+fbyp.Size = UDim2.new(0, 223, 0, 15)
+fbyp.Font = Enum.Font.Arial
+fbyp.Text = "FE Bypass"
+fbyp.TextColor3 = Color3.fromRGB(255, 255, 255)
+fbyp.TextSize = 14.000
+
 TextButton.Parent = base
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -216,7 +228,7 @@ TextLabel_4.TextSize = 19.000
 
 -- Scripts:
 
-local function OJLNYU_fake_script() -- base.LocalScript 
+local function ONDB_fake_script() -- base.LocalScript 
 	local script = Instance.new('LocalScript', base)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -259,8 +271,8 @@ local function OJLNYU_fake_script() -- base.LocalScript
 		end
 	end)
 end
-coroutine.wrap(OJLNYU_fake_script)()
-local function TLEIUDQ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(ONDB_fake_script)()
+local function JKYTSQD_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local on = false
@@ -279,8 +291,8 @@ local function TLEIUDQ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(TLEIUDQ_fake_script)()
-local function REBAIE_fake_script() -- ctil.main 
+coroutine.wrap(JKYTSQD_fake_script)()
+local function YZGCRU_fake_script() -- ctil.main 
 	local script = Instance.new('LocalScript', ctil)
 
 	-- CUtil main script!
@@ -312,16 +324,6 @@ local function REBAIE_fake_script() -- ctil.main
 	
 	if getIfCusCilentEnv() == 'Delta' then
 		msg = '[OP] Delta, 100sUnc'
-	elseif getIfCusCilentEnv() == 'Xeno' then
-		msg = '[MID] Xeno, 81unc/41sunc'
-	elseif getIfCusCilentEnv() == 'Velocity' then
-		msg = '[OP] Velocity, 99unc/90sUnc'
-	elseif getIfCusCilentEnv() == 'Zenith' then
-		msg = '[OP] Zenith, 99unc/100sUnc'
-	elseif getIfCusCilentEnv() == 'Awp' then
-		msg = '[OP] Awp, 99unc/98sUnc'
-	elseif getIfCusCilentEnv() == 'Wave' then
-		msg = '[OP] Wave, 99unc/100sUnc'
 	else
 		msg = '[IDK] ' .. getIfCusCilentEnv()
 	end
@@ -435,7 +437,7 @@ local function REBAIE_fake_script() -- ctil.main
 	
 	contents.rox6.MouseButton1Click:Connect(function()
 		local a,b = pcall(function()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/RIPg00by/Ro-Xploit-6.0/refs/heads/main/Script"))()
+			loadstring(game:HttpGet("https://github.com/LuaGunsX/LuasLegacyScripts/blob/main/%5BGUI%5D%20Ro-Xploit%206.0"))()
 		end)
 		if not a then
 			local exec = getIfCusCilentEnv()
@@ -446,5 +448,22 @@ local function REBAIE_fake_script() -- ctil.main
 			end
 		end
 	end)
+	
+	contents.fbyp.MouseButton1Click:Connect(function()
+		local a,b = pcall(function()
+			loadstring(game:HttpGet("https://github.com/LuaGunsX/HerbertV1/blob/main/main.lua"))()
+		end)
+		if not a then
+			local exec = getIfCusCilentEnv()
+			if exec == 'Unknown' then
+				log('You are not on a Modified Cilent!')
+			else
+				log('It seems like you are on an executor but it errors, Do you have an low sUnc/Unc?')
+			end
+		else
+			game:GetService("StarterGui"):SetCore('DevConsoleVisible', true)
+			log('Done! Execute something in your executor and it will transfer to server, Make sure it successed first!')
+		end
+	end)
 end
-coroutine.wrap(REBAIE_fake_script)()
+coroutine.wrap(YZGCRU_fake_script)()
