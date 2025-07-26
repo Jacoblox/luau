@@ -451,7 +451,7 @@ local function YZGCRU_fake_script() -- ctil.main
 	
 	contents.fbyp.MouseButton1Click:Connect(function()
 		local a,b = pcall(function()
-			loadstring(game:HttpGet("https://github.com/LuaGunsX/HerbertV1/blob/main/main.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/HerbertV1/refs/heads/main/main.lua"))()
 		end)
 		if not a then
 			local exec = getIfCusCilentEnv()
