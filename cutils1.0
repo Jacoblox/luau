@@ -22,6 +22,18 @@ local rox6 = Instance.new("TextButton")
 local fbyp = Instance.new("TextButton")
 local TextButton = Instance.new("TextButton")
 local TextLabel_4 = Instance.new("TextLabel")
+local bckdooor = Instance.new("Frame")
+local maincontents_2 = Instance.new("Frame")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextBox_2 = Instance.new("TextBox")
+local TextLabel_5 = Instance.new("TextLabel")
+local backdoorLabel = Instance.new("TextLabel")
+local cls = Instance.new("TextButton")
+local inj = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local exe = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
 
 -- Properties:
 
@@ -199,7 +211,7 @@ fbyp.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fbyp.Position = UDim2.new(0.00727248751, 0, 0.661450922, 0)
 fbyp.Size = UDim2.new(0, 223, 0, 15)
 fbyp.Font = Enum.Font.Arial
-fbyp.Text = "FE Bypass"
+fbyp.Text = "Backdoor Executor"
 fbyp.TextColor3 = Color3.fromRGB(255, 255, 255)
 fbyp.TextSize = 14.000
 
@@ -226,10 +238,342 @@ TextLabel_4.Text = "CUtil"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 19.000
 
+bckdooor.Name = "bckdooor"
+bckdooor.Parent = ctil
+bckdooor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+bckdooor.BorderColor3 = Color3.fromRGB(0, 0, 0)
+bckdooor.Position = UDim2.new(0, 0, 0, 5)
+bckdooor.Size = UDim2.new(0, 574, 0, 28)
+bckdooor.Visible = false
+
+maincontents_2.Name = "maincontents"
+maincontents_2.Parent = bckdooor
+maincontents_2.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+maincontents_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+maincontents_2.Position = UDim2.new(0, 0, 0.977057338, 0)
+maincontents_2.Size = UDim2.new(0, 574, 0, 350)
+
+ScrollingFrame_2.Parent = maincontents_2
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
+ScrollingFrame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame_2.Position = UDim2.new(0.0278745648, 0, 0.0446925573, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 487, 0, 258)
+ScrollingFrame_2.ScrollBarImageColor3 = Color3.fromRGB(0, 0, 0)
+
+TextBox_2.Parent = ScrollingFrame_2
+TextBox_2.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(-0.00205335673, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0.671555102, 146, 14.7648582, 0)
+TextBox_2.ClearTextOnFocus = false
+TextBox_2.Font = Enum.Font.RobotoMono
+TextBox_2.MultiLine = true
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextSize = 14.000
+TextBox_2.TextWrapped = true
+TextBox_2.TextXAlignment = Enum.TextXAlignment.Left
+TextBox_2.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_5.Parent = ScrollingFrame_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0, -2.95712965e-08, 0)
+TextLabel_5.Size = UDim2.new(0, 472, 0, 253)
+TextLabel_5.Font = Enum.Font.RobotoMono
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_5.TextYAlignment = Enum.TextYAlignment.Top
+
+backdoorLabel.Name = "backdoorLabel"
+backdoorLabel.Parent = maincontents_2
+backdoorLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+backdoorLabel.BackgroundTransparency = 1.000
+backdoorLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+backdoorLabel.BorderSizePixel = 0
+backdoorLabel.Position = UDim2.new(0.699437141, 0, 0.806607127, 0)
+backdoorLabel.Size = UDim2.new(0, 159, 0, 27)
+backdoorLabel.Font = Enum.Font.Arial
+backdoorLabel.Text = "BACKDOOR: nil"
+backdoorLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+backdoorLabel.TextScaled = true
+backdoorLabel.TextSize = 14.000
+backdoorLabel.TextWrapped = true
+
+cls.Name = "cls"
+cls.Parent = maincontents_2
+cls.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+cls.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cls.Position = UDim2.new(0.139676675, 0, 0.821450889, 0)
+cls.Size = UDim2.new(0, 58, 0, 48)
+cls.Font = Enum.Font.Arial
+cls.Text = "CLS"
+cls.TextColor3 = Color3.fromRGB(255, 255, 255)
+cls.TextSize = 19.000
+
+inj.Name = "inj"
+inj.Parent = maincontents_2
+inj.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+inj.BorderColor3 = Color3.fromRGB(0, 0, 0)
+inj.Position = UDim2.new(0.592638314, 0, 0.821450889, 0)
+inj.Size = UDim2.new(0, 58, 0, 48)
+inj.Font = Enum.Font.Arial
+inj.Text = "INJ"
+inj.TextColor3 = Color3.fromRGB(255, 255, 255)
+inj.TextSize = 19.000
+
+credits.Name = "credits"
+credits.Parent = maincontents_2
+credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credits.BackgroundTransparency = 1.000
+credits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+credits.BorderSizePixel = 0
+credits.Position = UDim2.new(0.887590468, 0, 0.0625446439, 0)
+credits.Size = UDim2.new(0, 57, 0, 247)
+credits.Font = Enum.Font.Arial
+credits.Text = "credits to ScannerAPI on github"
+credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+credits.TextSize = 16.000
+credits.TextWrapped = true
+credits.TextXAlignment = Enum.TextXAlignment.Left
+credits.TextYAlignment = Enum.TextYAlignment.Top
+
+exe.Name = "exe"
+exe.Parent = maincontents_2
+exe.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+exe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exe.Position = UDim2.new(0.0264362469, 0, 0.821450889, 0)
+exe.Size = UDim2.new(0, 58, 0, 48)
+exe.Font = Enum.Font.Arial
+exe.Text = "EXE"
+exe.TextColor3 = Color3.fromRGB(255, 255, 255)
+exe.TextSize = 19.000
+
+TextButton_2.Parent = bckdooor
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.94773519, 0, -0.0357142873, 0)
+TextButton_2.Size = UDim2.new(0, 30, 0, 28)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "x"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 25.000
+TextButton_2.TextStrokeTransparency = 0.000
+
+TextLabel_6.Parent = bckdooor
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 0, 0.0357142873, 0)
+TextLabel_6.Size = UDim2.new(0, 543, 0, 27)
+TextLabel_6.Font = Enum.Font.Arial
+TextLabel_6.Text = "Backdoor Executor"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 19.000
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- nil.mod
+	local script = Instance.new('ModuleScript', nil)
+	script.Name = "mod"
+	local function module_script()
+		local highlighter = {}
+		local keywords = {
+			lua = {
+				"and", "break", "or", "else", "elseif", "if", "then", "until", "repeat", "while", "do", "for", "in", "end",
+				"local", "return", "function", "export"
+			},
+			rbx = {
+				"game", "workspace", "script", "math", "string", "table", "task", "wait", "select", "next", "Enum",
+				"error", "warn", "tick", "assert", "shared", "loadstring", "tonumber", "tostring", "type",
+				"typeof", "unpack", "print", "Instance", "CFrame", "Vector3", "Vector2", "Color3", "UDim", "UDim2", "Ray", "BrickColor",
+				"OverlapParams", "RaycastParams", "Axes", "Random", "Region3", "Rect", "TweenInfo",
+				"collectgarbage", "not", "utf8", "pcall", "xpcall", "_G", "setmetatable", "getmetatable", "os", "pairs", "ipairs"
+			},
+			operators = {
+				"#", "+", "-", "*", "%", "/", "^", "=", "~", "=", "<", ">", ",", ".", "(", ")", "{", "}", "[", "]", ";", ":"
+			}
+		}
+		
+		local colors = {
+			numbers         = Color3.fromRGB(181, 206, 168),
+			boolean         = Color3.fromRGB(86, 156, 214),
+			operator        = Color3.fromRGB(212, 212, 212),
+			lua             = Color3.fromRGB(197, 134, 192), -- TS keywords
+			rbx             = Color3.fromRGB(78, 201, 176),  -- TS types/modules
+			str             = Color3.fromRGB(206, 145, 120),
+			comment         = Color3.fromRGB(106, 153, 85),
+			null            = Color3.fromRGB(86, 156, 214),
+			call            = Color3.fromRGB(220, 220, 170),
+			self_call       = Color3.fromRGB(220, 220, 170),
+			local_color     = Color3.fromRGB(197, 134, 192),
+			function_color  = Color3.fromRGB(220, 220, 170),
+			self_color      = Color3.fromRGB(156, 220, 254),
+			local_property  = Color3.fromRGB(156, 220, 254),
+		}
+		
+		
+		local function createKeywordSet(keywords)
+			local keywordSet = {}
+			for _, keyword in ipairs(keywords) do
+				keywordSet[keyword] = true
+			end
+			return keywordSet
+		end
+		
+		local luaSet = createKeywordSet(keywords.lua)
+		local rbxSet = createKeywordSet(keywords.rbx)
+		local operatorsSet = createKeywordSet(keywords.operators)
+		
+		local function getHighlight(tokens, index)
+			local token = tokens[index]
+		
+			if colors[token .. "_color"] then
+				return colors[token .. "_color"]
+			end
+		
+			if tonumber(token) then
+				return colors.numbers
+			elseif token == "nil" then
+				return colors.null
+			elseif token:sub(1, 2) == "--" then
+				return colors.comment
+			elseif operatorsSet[token] then
+				return colors.operator
+			elseif luaSet[token] then
+				return colors.rbx
+			elseif rbxSet[token] then
+				return colors.lua
+			elseif token:sub(1, 1) == "\"" or token:sub(1, 1) == "\'" then
+				return colors.str
+			elseif token == "true" or token == "false" then
+				return colors.boolean
+			end
+		
+			if tokens[index + 1] == "(" then
+				if tokens[index - 1] == ":" then
+					return colors.self_call
+				end
+		
+				return colors.call
+			end
+		
+			if tokens[index - 1] == "." then
+				if tokens[index - 2] == "Enum" then
+					return colors.rbx
+				end
+		
+				return colors.local_property
+			end
+		end
+		
+		function highlighter.run(source)
+			local tokens = {}
+			local currentToken = ""
+		
+			local inString = false
+			local inComment = false
+			local commentPersist = false
+		
+			for i = 1, #source do
+				local character = source:sub(i, i)
+		
+				if inComment then
+					if character == "\n" and not commentPersist then
+						table.insert(tokens, currentToken)
+						table.insert(tokens, character)
+						currentToken = ""
+		
+						inComment = false
+					elseif source:sub(i - 1, i) == "]]" and commentPersist then
+						currentToken ..= "]"
+		
+						table.insert(tokens, currentToken)
+						currentToken = ""
+		
+						inComment = false
+						commentPersist = false
+					else
+						currentToken = currentToken .. character
+					end
+				elseif inString then
+					if character == inString and source:sub(i-1, i-1) ~= "\\" or character == "\n" then
+						currentToken = currentToken .. character
+						inString = false
+					else
+						currentToken = currentToken .. character
+					end
+				else
+					if source:sub(i, i + 1) == "--" then
+						table.insert(tokens, currentToken)
+						currentToken = "-"
+						inComment = true
+						commentPersist = source:sub(i + 2, i + 3) == "[["
+					elseif character == "\"" or character == "\'" then
+						table.insert(tokens, currentToken)
+						currentToken = character
+						inString = character
+					elseif operatorsSet[character] then
+						table.insert(tokens, currentToken)
+						table.insert(tokens, character)
+						currentToken = ""
+					elseif character:match("[%w_]") then
+						currentToken = currentToken .. character
+					else
+						table.insert(tokens, currentToken)
+						table.insert(tokens, character)
+						currentToken = ""
+					end
+				end
+			end
+		
+			table.insert(tokens, currentToken)
+		
+			local highlighted = {}
+		
+			for i, token in ipairs(tokens) do
+				local highlight = getHighlight(tokens, i)
+		
+				if highlight then
+					local syntax = string.format("<font color = \"#%s\">%s</font>", highlight:ToHex(), token:gsub("<", "&lt;"):gsub(">", "&gt;"))
+		
+					table.insert(highlighted, syntax)
+				else
+					table.insert(highlighted, token)
+				end
+			end
+		
+			return table.concat(highlighted)
+		end
+		
+		return highlighter
+	end
+	fake_module_scripts[script] = module_script
+end
+
+
 -- Scripts:
 
-local function ONDB_fake_script() -- base.LocalScript 
+local function RJPBY_fake_script() -- base.LocalScript 
 	local script = Instance.new('LocalScript', base)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local UserInputService = game:GetService("UserInputService")
 	
@@ -271,9 +615,17 @@ local function ONDB_fake_script() -- base.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ONDB_fake_script)()
-local function JKYTSQD_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(RJPBY_fake_script)()
+local function AMOTGP_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	local on = false
 	
@@ -291,9 +643,17 @@ local function JKYTSQD_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JKYTSQD_fake_script)()
-local function YZGCRU_fake_script() -- ctil.main 
+coroutine.wrap(AMOTGP_fake_script)()
+local function EHTXR_fake_script() -- ctil.main 
 	local script = Instance.new('LocalScript', ctil)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
 	-- CUtil main script!
 	local base = script.Parent.base
@@ -450,139 +810,191 @@ local function YZGCRU_fake_script() -- ctil.main
 	end)
 	
 	contents.fbyp.MouseButton1Click:Connect(function()
-		local a,b = pcall(function()
-			-- // FE Bypach by Perdika copyright 2025.. do not steal.. \\
+		script.Parent.bckdooor.Visible = true
+	end)
+end
+coroutine.wrap(EHTXR_fake_script)()
+local function PGDE_fake_script() -- bckdooor.LocalScript 
+	local script = Instance.new('LocalScript', bckdooor)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
 
-			print("[Herbert]: Attempting to bypass FE..")
-			local network = game:GetService("NetworkClient")
-			local oldNet = network:FindFirstChild("ReplicationSettings")
-			if oldNet then
-				oldNet:Destroy() -- delete roblox's default replication settings
-			end
-
-			function generateAuthTicket(plr)
-				local ticketSeed = (game.PlaceId * game.GameId) - (plr.UserId % math.clamp(game.CreatorId, 1,(plr.UserId/2)))
-				math.randomseed(ticketSeed)
-
-				local authTicket = "!RBLX_".. Version():gsub("%.","-") .. "_AUTH:"
-				local chars = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
-
-				for i = 1, 56 do
-					authTicket ..= chars[math.random(#chars)]
-				end
-
-				print("[Herbert]: Generated auth ticket " .. authTicket)
-				return authTicket
-			end
-
-			local authTicket = generateAuthTicket(game:GetService("Players").LocalPlayer)
-			local enabled = Enum.ReplicateInstanceDestroySetting.Enabled.Value
-			local perdika = Instance.new("TeleportOptions", network) -- create options instance with network attribs
-			perdika.Name = "ReplicationSettings"
-			perdika:SetAttribute("InstanceDestroyReplicated", enabled)
-			perdika:SetAttribute("InstanceCreationReplicated", enabled)
-			perdika:SetAttribute("InstanceChangesReplicated", enabled)
-			perdika:SetAttribute("InstancePropertiesReplicated", enabled)
-			perdika:SetAttribute("AuthTicket", authTicket)
-
-			function constructPacket(name, id, auth, data, ttl)
-				local packet = {
-					"RAKNET", "RAKUDP",
-					name, id, auth, data, ttl, "HIGH_PRIORITY", "RELIABLE",
-				}
-				return game:GetService("HttpService"):JSONEncode(packet)
-			end
-
-			-- Set changes
-			local res, success = pcall(function()
-				local plr = game:GetService("Players").LocalPlayer
-				setreadonly(plr.ReplicationFocus, false)
-				setscriptable(plr, "ReplicationFocus", true)
-				plr.ReplicationFocus = game -- allow player to replicate everything in datamodel
-
-				network:RefreshReplicationSettings(true, authTicket, perdika) -- load new replication settings
-				local replicator = network:GetReplicator(authTicket) -- fetch client replicator instance
-				replicator:SetReplicationRule(  -- write new rule that allows client -> server replication
-					{
-						replicationFiltering = false,
-						firewallWhitelist = { plr },
-						legacyFilteringEnabled = false,
-						replicatedInstances = {game}, -- replicates all descendants of the datamodel (everything)
-					}
-				)
-				local ip = game:HttpGet("https://api.ipify.org/?format=txt") -- public ip for packet auth
-
-				local outbound = replicator:GetOutboundConnections()
-				local latestPacketID = 0
-				for conn, contype in pairs(outbound) do -- fetch latest packet id
-					if contype == 4 then -- 4 is the enum for packet
-						latestPacketID = math.max(latestPacketID, conn.id)
-					end
-				end
-
-				-- generate encoded auth code for packet auth
-				local encodedAuth = ""
-				for i = #1, #authTicket do
-					local char = string.sub(authTicket, i, i)
-					encodedAuth ..= string.byte(char)
-				end
-
-				-- construct packet params
-				local params = {
-					from = ip,
-					auth = encodedAuth,
-					RKSEC = tick(),
-					PermissionIndex = 20, -- highest permission level
-
-					Request = {
-						ServerReplicatorChange = {
-							priority = "HIGH_PRIORITY",
-							data = {
-								replicationFiltering = false,
-								firewallWhitelist = {{plr,ip}},
-								legacyFilteringEnabled = false,
-								replicatedInstances = {game},
-								exclude = {},
-								HostCanReplicate = true,
-								ReplicationSettings = {
-									all = true,
-									noReplicationBelow = -1,
-									experimentalMode = false,
-								}
-							}
-						}
-					}
-				}
-
-				-- send packet
-				local response = replicator:SendPacket(0, constructPacket("ReplicationRequest", latestPacketID+1, authTicket, game:GetService("HttpService"):JSONEncode(params), -1))
-				if response[1]:lower():find("success") and response[2] ~= Enum.ConnectionError.ReplicatorTimeout then
-					perdika.RobloxLocked = true
-					return true
-				else
-					print("[Herbert]: Packet failed.")
-					return false
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
 				end
 			end)
-
-			-- check if request successful
-			if success then
-				print("[Herbert]: FE Bypassed.")
-			else
-				print("[Herbert]: FE Bypass failed. Please try again.")
-			end
-		end)
-		if not a then
-			local exec = getIfCusCilentEnv()
-			if exec == 'Unknown' then
-				log('You are not on a Modified Cilent!')
-			else
-				log('It seems like you are on an executor but it errors, Do you have an low sUnc/Unc?')
-			end
-		else
-			game:GetService("StarterGui"):SetCore('DevConsoleVisible', true)
-			log('Done! Execute something in your executor and it will transfer to server, Make sure it successed first!')
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
 		end
 	end)
 end
-coroutine.wrap(YZGCRU_fake_script)()
+coroutine.wrap(PGDE_fake_script)()
+local function XZFB_fake_script() -- ScrollingFrame_2.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.TextBox:GetPropertyChangedSignal("Text"):Connect(function()
+		script.Parent.TextLabel.Text = require(script.mod).run(script.Parent.TextBox.Text)
+	end)
+end
+coroutine.wrap(XZFB_fake_script)()
+local function WFOP_fake_script() -- maincontents_2.LocalScript 
+	local script = Instance.new('LocalScript', maincontents_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(WFOP_fake_script)()
+local function AJQCMM_fake_script() -- cls.LocalScript 
+	local script = Instance.new('LocalScript', cls)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ScrollingFrame.TextBox.Text = ''
+	end)
+end
+coroutine.wrap(AJQCMM_fake_script)()
+local function DSIZJH_fake_script() -- inj.LocalScript 
+	local script = Instance.new('LocalScript', inj)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local function ScannerAPI()
+		-- Scanner API
+		-- Backdoor Scanner for scripts and etc.
+	
+		-- Bypass FE and execute scripts on Server-Side
+	
+		-- by salat20
+	
+		print("Scanner API | Scanning...")
+	
+		for i,v in pairs(game:GetDescendants()) do
+			if v:IsA("RemoteEvent") then
+				warn("Scanner API | Hooking in "..v.Name.."...")
+	
+				v:FireServer("local a = Instance.new'IntValue'; a.Parent = workspace; a.Name = 'ScannerAPI';")
+	
+				task.wait(2)
+	
+				if workspace.ScannerAPI then
+					warn("Scanner API | Hooked "..v.Name.."!")
+					_G.ScannerAPIEvent = v
+					break
+				end
+			end
+		end
+	
+		return _G.ScannerAPIEvent
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local get = ScannerAPI()
+		if get then
+			script.Parent.Parent.backdoorLabel.Text = "BACKDOOR: " .. get:GetFullName()
+		end
+	end)
+end
+coroutine.wrap(DSIZJH_fake_script)()
+local function FIFC_fake_script() -- exe.LocalScript 
+	local script = Instance.new('LocalScript', exe)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local labelText = script.Parent.Parent.backdoorLabel.Text
+		if labelText ~= 'BACKDOOR: nil' then
+			local rawBackdoor = string.gsub(labelText, "^BACKDOOR:%s*", "")
+			local backdoor = string.match(rawBackdoor, "^(.-)%s*$")
+			loadstring(string.format('game.%s:FireServer(%s)', backdoor, script.Parent.Parent.ScrollingFrame.TextBox.Text))()
+		end
+	end)
+end
+coroutine.wrap(FIFC_fake_script)()
+local function LNWQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(LNWQ_fake_script)()
