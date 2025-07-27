@@ -660,7 +660,7 @@ end
 
 -- Scripts:
 
-local function PIFZWAT_fake_script() -- base.LocalScript 
+local function DQCG_fake_script() -- base.LocalScript 
 	local script = Instance.new('LocalScript', base)
 	local req = require
 	local require = function(obj)
@@ -711,8 +711,8 @@ local function PIFZWAT_fake_script() -- base.LocalScript
 		end
 	end)
 end
-coroutine.wrap(PIFZWAT_fake_script)()
-local function ELDMIJ_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(DQCG_fake_script)()
+local function LJYLDOO_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 	local req = require
 	local require = function(obj)
@@ -739,8 +739,8 @@ local function ELDMIJ_fake_script() -- TextButton.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ELDMIJ_fake_script)()
-local function IKZP_fake_script() -- ctil.main 
+coroutine.wrap(LJYLDOO_fake_script)()
+local function XHEB_fake_script() -- ctil.main 
 	local script = Instance.new('LocalScript', ctil)
 	local req = require
 	local require = function(obj)
@@ -938,8 +938,8 @@ local function IKZP_fake_script() -- ctil.main
 		script.Parent.FBYPEX.Visible = true
 	end)
 end
-coroutine.wrap(IKZP_fake_script)()
-local function ZJTMH_fake_script() -- bckdooor.LocalScript 
+coroutine.wrap(XHEB_fake_script)()
+local function VAMUOS_fake_script() -- bckdooor.LocalScript 
 	local script = Instance.new('LocalScript', bckdooor)
 	local req = require
 	local require = function(obj)
@@ -990,8 +990,8 @@ local function ZJTMH_fake_script() -- bckdooor.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ZJTMH_fake_script)()
-local function AUSUN_fake_script() -- ScrollingFrame_2.LocalScript 
+coroutine.wrap(VAMUOS_fake_script)()
+local function LPPXT_fake_script() -- ScrollingFrame_2.LocalScript 
 	local script = Instance.new('LocalScript', ScrollingFrame_2)
 	local req = require
 	local require = function(obj)
@@ -1006,8 +1006,8 @@ local function AUSUN_fake_script() -- ScrollingFrame_2.LocalScript
 		script.Parent.TextLabel.Text = require(script.mod).run(script.Parent.TextBox.Text)
 	end)
 end
-coroutine.wrap(AUSUN_fake_script)()
-local function PHXKHSR_fake_script() -- cls.LocalScript 
+coroutine.wrap(LPPXT_fake_script)()
+local function RTFZDL_fake_script() -- cls.LocalScript 
 	local script = Instance.new('LocalScript', cls)
 	local req = require
 	local require = function(obj)
@@ -1022,8 +1022,8 @@ local function PHXKHSR_fake_script() -- cls.LocalScript
 		script.Parent.Parent.ScrollingFrame.TextBox.Text = ''
 	end)
 end
-coroutine.wrap(PHXKHSR_fake_script)()
-local function BTJT_fake_script() -- inj.LocalScript 
+coroutine.wrap(RTFZDL_fake_script)()
+local function JBTNTIG_fake_script() -- inj.LocalScript 
 	local script = Instance.new('LocalScript', inj)
 	local req = require
 	local require = function(obj)
@@ -1055,8 +1055,8 @@ local function BTJT_fake_script() -- inj.LocalScript
 		end
 	end)
 end
-coroutine.wrap(BTJT_fake_script)()
-local function SFLU_fake_script() -- exe.LocalScript 
+coroutine.wrap(JBTNTIG_fake_script)()
+local function JZPBXL_fake_script() -- exe.LocalScript 
 	local script = Instance.new('LocalScript', exe)
 	local req = require
 	local require = function(obj)
@@ -1076,8 +1076,8 @@ local function SFLU_fake_script() -- exe.LocalScript
 		end
 	end)
 end
-coroutine.wrap(SFLU_fake_script)()
-local function ALEXOY_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(JZPBXL_fake_script)()
+local function EHRAYG_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 	local req = require
 	local require = function(obj)
@@ -1092,8 +1092,8 @@ local function ALEXOY_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(ALEXOY_fake_script)()
-local function JMLAYKN_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(EHRAYG_fake_script)()
+local function UUJKJQP_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 	local req = require
 	local require = function(obj)
@@ -1112,4 +1112,4 @@ local function JMLAYKN_fake_script() -- TextButton_4.LocalScript
 		Visible       =                           false
 	end)
 end
-coroutine.wrap(JMLAYKN_fake_script)()
+coroutine.wrap(UUJKJQP_fake_script)()
