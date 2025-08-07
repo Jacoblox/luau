@@ -65,7 +65,7 @@ Converted["_open"].Name = "open"
 Converted["_open"].Parent = Converted["_epicals"]
 
 Converted["_ImageLabel"].Image = "rbxassetid://17871076086"
-Converted["_ImageLabel"].ImageContent = Content
+
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BackgroundTransparency = 1
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -94,7 +94,6 @@ Converted["_UICorner"].CornerRadius = UDim.new(0, 999)
 Converted["_UICorner"].Parent = Converted["_Frame1"]
 
 Converted["_ImageButton"].Image = "rbxassetid://78976970"
-Converted["_ImageButton"].ImageContent = Content
 Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageButton"].BackgroundTransparency = 1
 Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -295,7 +294,6 @@ Converted["_reqboxmedmed"].Parent = Converted["_Main"]
 Converted["_UICorner2"].Parent = Converted["_main"]
 
 Converted["_Icon"].Image = "rbxassetid://78976970"
-Converted["_Icon"].ImageContent = Content
 Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Icon"].BackgroundTransparency = 1
 Converted["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
