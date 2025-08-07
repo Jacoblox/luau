@@ -43,7 +43,7 @@ Instances.epicals.ClipToDeviceSafeArea = true
 Instances.epicals.IgnoreGuiInset = false
 Instances.epicals.ScreenInsets = Enum.ScreenInsets.CoreUISafeInsets
 Instances.epicals.DisplayOrder = 0
-Instances.epicals.Parent = game.StarterGui
+Instances.epicals.Parent = game.Players.LocalPlayer.PlayerGui
 
 Instances.open.Name = "open"
 Instances.open.LayoutOrder = 0
