@@ -29,23 +29,26 @@ local Converted = {
 	["_ModuleScript"] = Instance.new("ModuleScript");
 	["_ScrollingFrame1"] = Instance.new("ScrollingFrame");
 	["_UIListLayout"] = Instance.new("UIListLayout");
-	["_TextButton"] = Instance.new("TextButton");
+	["_p"] = Instance.new("TextButton");
 	["_LocalScript5"] = Instance.new("LocalScript");
+	["_p1"] = Instance.new("TextButton");
+	["_LocalScript6"] = Instance.new("LocalScript");
 	["_reqbox"] = Instance.new("TextBox");
 	["_reqboxmed"] = Instance.new("TextBox");
 	["_req"] = Instance.new("TextButton");
-	["_LocalScript6"] = Instance.new("LocalScript");
+	["_LocalScript7"] = Instance.new("LocalScript");
 	["_reqboxmedmed"] = Instance.new("TextBox");
 	["_UICorner2"] = Instance.new("UICorner");
 	["_Icon"] = Instance.new("ImageLabel");
 	["_TextLabel2"] = Instance.new("TextLabel");
-	["_TextButton1"] = Instance.new("TextButton");
-	["_LocalScript7"] = Instance.new("LocalScript");
-	["_UIDrag"] = Instance.new("LocalScript");
+	["_TextButton"] = Instance.new("TextButton");
+	["_LocalScript8"] = Instance.new("LocalScript");
+	["_Dragify"] = Instance.new("LocalScript");
 	["_api_module_epicals"] = Instance.new("ModuleScript");
 	["_Loadstring"] = Instance.new("ModuleScript");
 	["_FiOne"] = Instance.new("ModuleScript");
 	["_Yueliang"] = Instance.new("ModuleScript");
+	["_code_examples"] = Instance.new("LocalScript");
 }
 
 -- Properties:
@@ -65,7 +68,7 @@ Converted["_open"].Name = "open"
 Converted["_open"].Parent = Converted["_epicals"]
 
 Converted["_ImageLabel"].Image = "rbxassetid://17871076086"
-
+Converted["_ImageLabel"].ImageContent = Content
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BackgroundTransparency = 1
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -94,6 +97,7 @@ Converted["_UICorner"].CornerRadius = UDim.new(0, 999)
 Converted["_UICorner"].Parent = Converted["_Frame1"]
 
 Converted["_ImageButton"].Image = "rbxassetid://78976970"
+Converted["_ImageButton"].ImageContent = Content
 Converted["_ImageButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageButton"].BackgroundTransparency = 1
 Converted["_ImageButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -106,8 +110,9 @@ Converted["_ImageButton"].Parent = Converted["_open"]
 Converted["_main"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_main"].BorderColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_main"].BorderSizePixel = 0
-Converted["_main"].Position = UDim2.new(0.449534148, 0, 0.165829152, 0)
+Converted["_main"].Position = UDim2.new(0.317546576, 0, 0.204773873, 0)
 Converted["_main"].Size = UDim2.new(0, 455, 0, 43)
+Converted["_main"].Visible = false
 Converted["_main"].Name = "main"
 Converted["_main"].Parent = Converted["_epicals"]
 
@@ -120,7 +125,6 @@ Converted["_Frame2"].Parent = Converted["_main"]
 
 Converted["_UICorner1"].Parent = Converted["_Frame2"]
 
-Converted["_ScrollingFrame"].CanvasPosition = Vector2.new(0, 280)
 Converted["_ScrollingFrame"].CanvasSize = UDim2.new(0, 0, 7, 0)
 Converted["_ScrollingFrame"].Active = true
 Converted["_ScrollingFrame"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -186,7 +190,6 @@ Converted["_inj"].Size = UDim2.new(0, 99, 0, 23)
 Converted["_inj"].Name = "inj"
 Converted["_inj"].Parent = Converted["_Main"]
 
-Converted["_TextBox"].CursorPosition = -1
 Converted["_TextBox"].Font = Enum.Font.RobotoMono
 Converted["_TextBox"].PlaceholderText = "-- write ur code here lol"
 Converted["_TextBox"].Text = ""
@@ -228,19 +231,32 @@ Converted["_ScrollingFrame1"].Parent = Converted["_Main"]
 Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIListLayout"].Parent = Converted["_ScrollingFrame1"]
 
-Converted["_TextButton"].Font = Enum.Font.Arial
-Converted["_TextButton"].Text = "rc7 remake"
-Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].TextSize = 22
-Converted["_TextButton"].TextWrapped = true
-Converted["_TextButton"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(89.00000229477882, 89.00000229477882, 89.00000229477882)
-Converted["_TextButton"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].Position = UDim2.new(0, 0, -4.62387561e-07, 0)
-Converted["_TextButton"].Size = UDim2.new(0, 195, 0, 27)
-Converted["_TextButton"].Parent = Converted["_ScrollingFrame1"]
+Converted["_p"].Font = Enum.Font.Arial
+Converted["_p"].Text = "polaria"
+Converted["_p"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_p"].TextSize = 22
+Converted["_p"].TextWrapped = true
+Converted["_p"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_p"].BackgroundColor3 = Color3.fromRGB(89.00000229477882, 89.00000229477882, 89.00000229477882)
+Converted["_p"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_p"].Position = UDim2.new(0, 0, -4.62387561e-07, 0)
+Converted["_p"].Size = UDim2.new(0, 195, 0, 27)
+Converted["_p"].Name = "p"
+Converted["_p"].Parent = Converted["_ScrollingFrame1"]
 
-Converted["_reqbox"].CursorPosition = -1
+Converted["_p1"].Font = Enum.Font.Arial
+Converted["_p1"].Text = "exser"
+Converted["_p1"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_p1"].TextSize = 22
+Converted["_p1"].TextWrapped = true
+Converted["_p1"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_p1"].BackgroundColor3 = Color3.fromRGB(89.00000229477882, 89.00000229477882, 89.00000229477882)
+Converted["_p1"].BorderColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_p1"].Position = UDim2.new(0, 0, -4.62387561e-07, 0)
+Converted["_p1"].Size = UDim2.new(0, 195, 0, 27)
+Converted["_p1"].Name = "p"
+Converted["_p1"].Parent = Converted["_ScrollingFrame1"]
+
 Converted["_reqbox"].Font = Enum.Font.Arial
 Converted["_reqbox"].PlaceholderText = "id"
 Converted["_reqbox"].Text = ""
@@ -253,7 +269,6 @@ Converted["_reqbox"].Size = UDim2.new(0, 209, 0, 24)
 Converted["_reqbox"].Name = "reqbox"
 Converted["_reqbox"].Parent = Converted["_Main"]
 
-Converted["_reqboxmed"].CursorPosition = -1
 Converted["_reqboxmed"].Font = Enum.Font.Arial
 Converted["_reqboxmed"].PlaceholderText = "method"
 Converted["_reqboxmed"].Text = ""
@@ -278,7 +293,6 @@ Converted["_req"].Size = UDim2.new(0, 209, 0, 23)
 Converted["_req"].Name = "req"
 Converted["_req"].Parent = Converted["_Main"]
 
-Converted["_reqboxmedmed"].CursorPosition = -1
 Converted["_reqboxmedmed"].Font = Enum.Font.Arial
 Converted["_reqboxmedmed"].PlaceholderText = ". or :"
 Converted["_reqboxmedmed"].Text = ""
@@ -294,6 +308,7 @@ Converted["_reqboxmedmed"].Parent = Converted["_Main"]
 Converted["_UICorner2"].Parent = Converted["_main"]
 
 Converted["_Icon"].Image = "rbxassetid://78976970"
+Converted["_Icon"].ImageContent = Content
 Converted["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Icon"].BackgroundTransparency = 1
 Converted["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -317,17 +332,17 @@ Converted["_TextLabel2"].Position = UDim2.new(1.27272797, 0, -0.157894775, 0)
 Converted["_TextLabel2"].Size = UDim2.new(0, 165, 0, 27)
 Converted["_TextLabel2"].Parent = Converted["_Icon"]
 
-Converted["_TextButton1"].Font = Enum.Font.Unknown
-Converted["_TextButton1"].Text = "X"
-Converted["_TextButton1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].TextSize = 17
-Converted["_TextButton1"].TextWrapped = true
-Converted["_TextButton1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].BorderSizePixel = 0
-Converted["_TextButton1"].Position = UDim2.new(0.854945064, 0, 0.116279244, 0)
-Converted["_TextButton1"].Size = UDim2.new(0, 58, 0, 20)
-Converted["_TextButton1"].Parent = Converted["_main"]
+Converted["_TextButton"].Font = Enum.Font.Unknown
+Converted["_TextButton"].Text = "X"
+Converted["_TextButton"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].TextSize = 17
+Converted["_TextButton"].TextWrapped = true
+Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextButton"].BorderSizePixel = 0
+Converted["_TextButton"].Position = UDim2.new(0.854945064, 0, 0.116279244, 0)
+Converted["_TextButton"].Size = UDim2.new(0, 58, 0, 20)
+Converted["_TextButton"].Parent = Converted["_main"]
 
 -- Fake Module Scripts:
 
@@ -376,14 +391,21 @@ do -- Fake Module: StarterGui.epicals.api_module_epicals
 			loadstring(stringa)()
 		end
 		
+		api.idreq = function(id: number)
+			local id = tostring(id)
+			local baseid = 'rbxassetid://' .. id
+			return require(api.getobjs(baseid)[1])
+		end
+		
 		return api
+		
     end
     fake_module_scripts[script] = module_script
 end
 
 -- Fake Local Scripts:
 
-local function IKVWBZF_fake_script() -- Fake Script: StarterGui.epicals.open.ImageLabel.LocalScript
+local function RYPGUD_fake_script() -- Fake Script: StarterGui.epicals.open.ImageLabel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ImageLabel"]
@@ -400,7 +422,7 @@ local function IKVWBZF_fake_script() -- Fake Script: StarterGui.epicals.open.Ima
 		script.Parent.Rotation += 1
 	end
 end
-local function HRYCA_fake_script() -- Fake Script: StarterGui.epicals.open.Frame.LocalScript
+local function FPLSAE_fake_script() -- Fake Script: StarterGui.epicals.open.Frame.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_Frame"]
@@ -417,7 +439,7 @@ local function HRYCA_fake_script() -- Fake Script: StarterGui.epicals.open.Frame
 		script.Parent.Rotation += 1
 	end
 end
-local function VCKFOK_fake_script() -- Fake Script: StarterGui.epicals.open.ImageButton.LocalScript
+local function NPFGY_fake_script() -- Fake Script: StarterGui.epicals.open.ImageButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_ImageButton"]
@@ -435,7 +457,7 @@ local function VCKFOK_fake_script() -- Fake Script: StarterGui.epicals.open.Imag
 		script.Parent.Parent.Parent.main.Visible = true
 	end)
 end
-local function IXFDP_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.exe.LocalScript
+local function FFYVTP_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.exe.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_exe"]
@@ -490,7 +512,7 @@ local function IXFDP_fake_script() -- Fake Script: StarterGui.epicals.main.Frame
 		end
 	end)
 end
-local function XGLKR_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.TextBox.LocalScript
+local function ZYPE_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.TextBox.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_TextBox"]
@@ -507,10 +529,10 @@ local function XGLKR_fake_script() -- Fake Script: StarterGui.epicals.main.Frame
 		script.Parent.TextLabel.Text = require(script.Parent.LocalScript.ModuleScript).run(script.Parent.Text)
 	end)
 end
-local function RHUUZWV_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.ScrollingFrame.TextButton.LocalScript
+local function BFAYMB_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.ScrollingFrame.p.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton"]
+    script.Parent = Converted["_p"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -520,15 +542,76 @@ local function RHUUZWV_fake_script() -- Fake Script: StarterGui.epicals.main.Fra
         return req(obj)
     end
 
-	function getapi()
-		return require(game:GetService('Players').LocalPlayer.PlayerGui.epicals.api_module_epicals)
-	end
-	
 	script.Parent.MouseButton1Click:Connect(function()
-		getapi().load(getapi().httpget('https://raw.githubusercontent.com/g00byd0lanxdd/RC7-REMAKE-6664/refs/heads/main/RC7%20REMAKE%206664'))
+		ifcusenv=function(func, func2)
+			local exec_name = (getexecutor or getexecutorname or getidentityexecutor or identifyexecutor or function() return 'Unknown' end)()
+			if not ( exec_name == 'Unknown' ) then
+				func()
+			else
+				if func2 == nil then
+					return
+				else
+					func2()
+				end
+			end
+		end
+		getobjs=function(url:string)
+			ifcusenv(function()
+				return game:GetObjects(url)
+			end, function()
+				print('not on cus env')
+			end)
+		end
+		local idreq = function(id: number)
+			local id = tostring(id)
+			local baseid = 'rbxassetid://' .. id
+			return require(getobjs(id)[1])
+		end
+		idreq(123255432303221):Pload(game.Players.LocalPlayer.Name)
 	end)
 end
-local function KSNXXIU_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.req.LocalScript
+local function NUWBZVY_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.ScrollingFrame.p.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_p1"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		ifcusenv=function(func, func2)
+			local exec_name = (getexecutor or getexecutorname or getidentityexecutor or identifyexecutor or function() return 'Unknown' end)()
+			if not ( exec_name == 'Unknown' ) then
+				func()
+			else
+				if func2 == nil then
+					return
+				else
+					func2()
+				end
+			end
+		end
+		getobjs=function(url:string)
+			ifcusenv(function()
+				return game:GetObjects(url)
+			end, function()
+				print('not on cus env')
+			end)
+		end
+		local idreq = function(id: number)
+			local id = tostring(id)
+			local baseid = 'rbxassetid://' .. id
+			return require(getobjs(id)[1])
+		end
+		idreq(10868847330):pls(game.Players.LocalPlayer.Name)
+	end)
+end
+local function CLOHM_fake_script() -- Fake Script: StarterGui.epicals.main.Frame.ScrollingFrame.Main.req.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
     script.Parent = Converted["_req"]
@@ -561,10 +644,10 @@ local function KSNXXIU_fake_script() -- Fake Script: StarterGui.epicals.main.Fra
 		end
 	end)
 end
-local function HSQWRMN_fake_script() -- Fake Script: StarterGui.epicals.main.TextButton.LocalScript
+local function RTHWPNS_fake_script() -- Fake Script: StarterGui.epicals.main.TextButton.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton1"]
+    script.Parent = Converted["_TextButton"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -579,9 +662,9 @@ local function HSQWRMN_fake_script() -- Fake Script: StarterGui.epicals.main.Tex
 		script.Parent.Parent.Parent.open.Visible = true
 	end)
 end
-local function BMIJ_fake_script() -- Fake Script: StarterGui.epicals.main.UIDrag
+local function QDZWOG_fake_script() -- Fake Script: StarterGui.epicals.main.Dragify
     local script = Instance.new("LocalScript")
-    script.Name = "UIDrag"
+    script.Name = "Dragify"
     script.Parent = Converted["_main"]
     local req = require
     local require = function(obj)
@@ -592,48 +675,95 @@ local function BMIJ_fake_script() -- Fake Script: StarterGui.epicals.main.UIDrag
         return req(obj)
     end
 
-	local UIS = game:GetService('UserInputService')
-	local frame = script.Parent
-	local dragToggle = nil
-	local dragSpeed = 0.25
-	local dragStart = nil
-	local startPos = nil
-	
-	local function updateInput(input)
-		local delta = input.Position - dragStart
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	end
-	
-	frame.InputBegan:Connect(function(input)
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-			dragToggle = true
-			dragStart = input.Position
-			startPos = frame.Position
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragToggle = false
-				end
-			end)
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+		dragToggle = nil
+		dragSpeed = 0.15
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.15), {Position = Position}):Play()
 		end
-	end)
-	
-	UIS.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			if dragToggle then
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
 				updateInput(input)
 			end
+		end)
+	end
+	dragify(script.Parent)
+	
+end
+local function NNYQI_fake_script() -- Fake Script: StarterGui.epicals.code_examples
+    local script = Instance.new("LocalScript")
+    script.Name = "code_examples"
+    script.Parent = Converted["_epicals"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	-- idreq
+	--[[
+		ifcusenv=function(func, func2)
+			local exec_name = (getexecutor or getexecutorname or getidentityexecutor or identifyexecutor or function() return 'Unknown' end)()
+			if not ( exec_name == 'Unknown' ) then
+				func()
+			else
+				if func2 == nil then
+					return
+				else
+					func2()
+				end
+			end
 		end
-	end)
+		getobjs=function(url:string)
+			ifcusenv(function()
+				return game:GetObjects(url)
+			end, function()
+				print('not on cus env')
+			end)
+		end
+		local idreq = function(id: number)
+			local id = tostring(id)
+			local baseid = 'rbxassetid://' .. id
+			return require(getobjs(id)[1])
+		end
+		idreq(123255432303221):Pload(game.Players.LocalPlayer.Name)
+	--]]
 end
 
-coroutine.wrap(IKVWBZF_fake_script)()
-coroutine.wrap(HRYCA_fake_script)()
-coroutine.wrap(VCKFOK_fake_script)()
-coroutine.wrap(IXFDP_fake_script)()
-coroutine.wrap(XGLKR_fake_script)()
-coroutine.wrap(RHUUZWV_fake_script)()
-coroutine.wrap(KSNXXIU_fake_script)()
-coroutine.wrap(HSQWRMN_fake_script)()
-coroutine.wrap(BMIJ_fake_script)()
+coroutine.wrap(RYPGUD_fake_script)()
+coroutine.wrap(FPLSAE_fake_script)()
+coroutine.wrap(NPFGY_fake_script)()
+coroutine.wrap(FFYVTP_fake_script)()
+coroutine.wrap(ZYPE_fake_script)()
+coroutine.wrap(BFAYMB_fake_script)()
+coroutine.wrap(NUWBZVY_fake_script)()
+coroutine.wrap(CLOHM_fake_script)()
+coroutine.wrap(RTHWPNS_fake_script)()
+coroutine.wrap(QDZWOG_fake_script)()
+coroutine.wrap(NNYQI_fake_script)()
