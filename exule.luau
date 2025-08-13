@@ -11,6 +11,7 @@
 		ss.hook() - hook all remotes (after ss.scan())
 		ss.send(remote, payload) - send payload to remote
 		ss.loadstring(code) - loadstring with all remotes hooked (if ur using this you dont need to use the scan, hook, send.)
+		ss.returnBackdoor - finds a backdoor and returns it, if none returns nil.
 	
 	-- Executors Recomended:
 		Delta Mobile       - 100sUnc, non-paid
@@ -24,48 +25,72 @@
 	
 --]]
 
-local ss = {
-	remotes = {};
-}
+return (function()
+	local ss = {
+		remotes = {};
+	}
 
-function ss.scan()
-	for _, v in ipairs(game:GetDescendants()) do
-		if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
-			table.insert(ss.remotes, v)
+	function ss.scan()
+		for _, v in ipairs(game:GetDescendants()) do
+			if v:IsA("RemoteEvent") or v:IsA("RemoteFunction") then
+				table.insert(ss.remotes, v)
+			end
 		end
 	end
-end
 
-function ss.hook()
-	local mt = getrawmetatable(game)
-	setreadonly(mt, false)
-	local old = mt.__namecall
-	mt.__namecall = newcclosure(function(self, ...)
-		local method = getnamecallmethod()
-		if method == "FireServer" or method == "InvokeServer" then
-			print("Intercepted:", self:GetFullName(), method, ...)
-		end
-		return old(self, ...)
-	end)
-end
-
-function ss.send(remote, payload)
-	if remote:IsA("RemoteEvent") then
-		remote:FireServer(payload)
-	elseif remote:IsA("RemoteFunction") then
-		local ok, res = pcall(function()
-			return remote:InvokeServer(payload)
+	function ss.hook()
+		local mt = getrawmetatable(game)
+		setreadonly(mt, false)
+		local old = mt.__namecall
+		mt.__namecall = newcclosure(function(self, ...)
+			local method = getnamecallmethod()
+			if method == "FireServer" or method == "InvokeServer" then
+				print("Intercepted:", self:GetFullName(), method, ...)
+			end
+			return old(self, ...)
 		end)
-		print("Response:", ok and res or "Error")
 	end
-end
 
-function ss.loadstring(code)
-	ss.scan()
-	ss.hook()
-	for _, v in ipairs(ss.remotes) do
-		ss.send(v, code)
+	function ss.send(remote, payload)
+		if remote:IsA("RemoteEvent") then
+			remote:FireServer(payload)
+		elseif remote:IsA("RemoteFunction") then
+			local ok, res = pcall(function()
+				return remote:InvokeServer(payload)
+			end)
+			print("Response:", ok and res or "Error")
+		end
 	end
-end
+	
+	function ss:returnBackdoor()
+		for _, v in pairs(ss.remotes) do
+			if v:IsA('RemoteEvent') then
+				v:FireServer('local w = Instance.new("RemoteEvent"); w.Name = "BackdoorEnsurrance"; w.Parent = workspace')
+				if workspace:WaitForChild('BackdoorEnsurrance', 1) then
+					workspace:WaitForChild('BackdoorEnsurrance'):Destroy()
+					return v
+				else
+					return nil
+				end
+			elseif v:IsA('RemoteFunction') then
+				v:InvokeServer('local w = Instance.new("RemoteEvent"); w.Name = "BackdoorEnsurrance"; w.Parent = workspace')
+				if workspace:WaitForChild('BackdoorEnsurrance', 1) then
+					workspace:WaitForChild('BackdoorEnsurrance'):Destroy()
+					return v
+				else
+					return nil
+				end
+			end
+		end
+	end
+	
+	function ss.loadstring(code)
+		ss.scan()
+		ss.hook()
+		for _, v in ipairs(ss.remotes) do
+			ss.send(v, code)
+		end
+	end
 
-return ss
+	return ss
+end)
