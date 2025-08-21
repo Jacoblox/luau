@@ -10,12 +10,13 @@ local Converted = {
 	["_Title"] = Instance.new("TextLabel");
 	["_Options"] = Instance.new("Frame");
 	["_TextButton"] = Instance.new("TextButton");
+	["_TextLabel"] = Instance.new("TextLabel");
 	["_DisabledLoadstrings"] = Instance.new("Frame");
 	["_ScrollingFrame"] = Instance.new("ScrollingFrame");
 	["_UIListLayout"] = Instance.new("UIListLayout");
 	["_MainScript"] = Instance.new("LocalScript");
 	["_Template"] = Instance.new("Frame");
-	["_TextLabel"] = Instance.new("TextLabel");
+	["_TextLabel1"] = Instance.new("TextLabel");
 	["_url"] = Instance.new("TextLabel");
 	["_DNE"] = Instance.new("LocalScript");
 }
@@ -69,9 +70,24 @@ Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_TextButton"].TextSize = 16
 Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_TextButton"].BorderColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].Position = UDim2.new(0.376470596, 0, 0.0882352963, 0)
+Converted["_TextButton"].Position = UDim2.new(0.0264705885, 0, 0.0882352963, 0)
 Converted["_TextButton"].Size = UDim2.new(0, 65, 0, 27)
 Converted["_TextButton"].Parent = Converted["_Options"]
+
+Converted["_TextLabel"].Font = Enum.Font.Arial
+Converted["_TextLabel"].Text = "Your IP:"
+Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].TextScaled = true
+Converted["_TextLabel"].TextSize = 14
+Converted["_TextLabel"].TextWrapped = true
+Converted["_TextLabel"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_TextLabel"].BackgroundTransparency = 1
+Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_TextLabel"].BorderSizePixel = 0
+Converted["_TextLabel"].Position = UDim2.new(0.547058821, 0, 0.0882352963, 0)
+Converted["_TextLabel"].Size = UDim2.new(0, 140, 0, 16)
+Converted["_TextLabel"].Parent = Converted["_Options"]
 
 Converted["_DisabledLoadstrings"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_DisabledLoadstrings"].BackgroundTransparency = 1
@@ -101,7 +117,7 @@ local fake_module_scripts = {}
 
 -- Fake Local Scripts:
 
-local function BRAY_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.UIDrag
+local function CHZOI_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.UIDrag
     local script = Instance.new("LocalScript")
     script.Name = "UIDrag"
     script.Parent = Converted["_MainFrame"]
@@ -149,7 +165,7 @@ local function BRAY_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.Ma
 		end
 	end)
 end
-local function XKKJQ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.MainScript
+local function JEXXD_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.MainScript
     local script = Instance.new("LocalScript")
     script.Name = "MainScript"
     script.Parent = Converted["_MainFrame"]
@@ -198,6 +214,27 @@ local function XKKJQ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.M
 		'ipinfo';
 		'base64';
 		'setreadonly';
+		"stealer",
+		"stolen",
+		"tobi's",
+		"trade",
+		"cmd.exe",
+		"linkingservice",
+		"messagebusservice",
+		"trade",
+		"gift",
+		"ratt",
+		"all your items",
+		"getdiscuser",
+		":5000/",
+		"canihazip",
+		"grabify",
+		"ipinfo",
+		"ipconfig",
+		"myip",
+		"externalip",
+		"checkip",
+		"mailbox",
 	}
 	
 	-- Functions (on GETGENV or IfNotOnCustomEnv then non GETFENV)
@@ -223,6 +260,8 @@ local function XKKJQ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.M
 		end
 	end
 	
+	local ls2 = returnNewCCLosureFuncBYFunc(loadstring)
+	
 	-- Main
 	beforeRunFuncGETifCusEnv(
 		hookfunction(loadstring, function(code: string)
@@ -231,17 +270,17 @@ local function XKKJQ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.M
 			for _, keyword in ipairs(unallowedKeywords) do
 				if string.find(loweredCode, string.lower(keyword)) then
 					local comp = template:Clone()
-					comp.Parent = main
+					comp.Parent = main.MainFrame.DisabledLoadstrings.ScrollingFrame
 					comp.Visible = true
 					comp.url.Text = 'URL: ' .. (
 						string.match(code, "HttpGet%s*%(%s*['\"](.-)['\"]%s*%)")
 							or "Unknown URL"
 					)
-					break
+					return
 				end
 			end
 	
-			return loadstring(code)
+			return ls2(code)
 		end),
 	
 		function()
@@ -249,11 +288,26 @@ local function XKKJQ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.M
 				Text = 'Script will not work as intended because current ENV is not modified.';
 				Button1 = 'OK';
 			})
+			return
 		end
 	)
 	
+	local httpGET = ( request or syn and syn.request or function(url:string) return game:HttpGet(url) end or function(url:string) if game:GetService('HttpService').HttpEnabled == true then return game:GetService('HttpService'):GetAsync(url) end end )
+	
+	beforeRunFuncGETifCusEnv(
+		function()
+			main.MainFrame.Options.TextLabel.Text += httpGET('https://api.ipify.org')
+		end,
+		function()
+			game.StarterGui:SetCore('SendNotification', {
+				Text = 'Script will not work as intended because current ENV is not modified.';
+				Button1 = 'OK';
+			})
+			return
+		end
+	)
 end
-local function JLUSP_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.DNE
+local function CQVBJ_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.MainFrame.DNE
     local script = Instance.new("LocalScript")
     script.Name = "DNE"
     script.Parent = Converted["_MainFrame"]
@@ -285,6 +339,6 @@ local function JLUSP_fake_script() -- Fake Script: StarterGui.__anti_ip_logger.M
 	
 end
 
-coroutine.wrap(BRAY_fake_script)()
-coroutine.wrap(XKKJQ_fake_script)()
-coroutine.wrap(JLUSP_fake_script)()
+coroutine.wrap(CHZOI_fake_script)()
+coroutine.wrap(JEXXD_fake_script)()
+coroutine.wrap(CQVBJ_fake_script)()
