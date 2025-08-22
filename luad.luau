@@ -116,11 +116,11 @@ Converted["_UIStroke"].Color = Color3.fromRGB(1.0000000591389835, 1.000000059138
 Converted["_UIStroke"].Thickness = 1.5
 Converted["_UIStroke"].Parent = Converted["_Frame"]
 
+Converted["_ICON"] = Instance.new("ImageLabel")
 Converted["_ICON"].Image = "rbxassetid://148252927"
-Converted["_ICON"].ImageContent = Content
 Converted["_ICON"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Converted["_ICON"].BackgroundTransparency = 1
-Converted["_ICON"].BorderColor3 = Color3.fromRGB(0, 0, 126.00000768899918)
+Converted["_ICON"].BorderColor3 = Color3.fromRGB(0, 0, 126)
 Converted["_ICON"].Position = UDim2.new(0.0230125524, 0, 0.0244755242, 0)
 Converted["_ICON"].Size = UDim2.new(0, 45, 0, 47)
 Converted["_ICON"].Name = "ICON"
@@ -208,7 +208,6 @@ Converted["_TextButton"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_TextButton"].Parent = Converted["_Scripts"]
 
 Converted["_ImageLabel"].Image = "rbxassetid://30673364"
-Converted["_ImageLabel"].ImageContent = Content
 Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel"].BackgroundTransparency = 1
 Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -243,7 +242,6 @@ Converted["_TextButton1"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_TextButton1"].Parent = Converted["_Executor"]
 
 Converted["_ImageLabel1"].Image = "rbxassetid://46342657"
-Converted["_ImageLabel1"].ImageContent = Content
 Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel1"].BackgroundTransparency = 1
 Converted["_ImageLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -278,7 +276,6 @@ Converted["_TextButton2"].Size = UDim2.new(1, 0, 1, 0)
 Converted["_TextButton2"].Parent = Converted["_RSpy"]
 
 Converted["_ImageLabel2"].Image = "rbxassetid://15170416971"
-Converted["_ImageLabel2"].ImageContent = Content
 Converted["_ImageLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel2"].BackgroundTransparency = 1
 Converted["_ImageLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -288,11 +285,8 @@ Converted["_ImageLabel2"].Size = UDim2.new(0, 30, 0, 30)
 Converted["_ImageLabel2"].Parent = Converted["_TextButton2"]
 
 Converted["_Scripts1"].BottomImage = "rbxassetid://16376862656"
-Converted["_Scripts1"].BottomImageContent = Content
 Converted["_Scripts1"].MidImage = "rbxassetid://14731175383"
-Converted["_Scripts1"].MidImageContent = Content
 Converted["_Scripts1"].TopImage = "rbxassetid://16376858572"
-Converted["_Scripts1"].TopImageContent = Content
 Converted["_Scripts1"].Active = true
 Converted["_Scripts1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_Scripts1"].BackgroundTransparency = 1
@@ -335,12 +329,9 @@ Converted["_Executor1"].Name = "Executor"
 Converted["_Executor1"].Parent = Converted["_Frame"]
 
 Converted["_Script"].BottomImage = "rbxassetid://16376862656"
-Converted["_Script"].BottomImageContent = Content
 Converted["_Script"].CanvasSize = UDim2.new(0, 0, 10000, 0)
 Converted["_Script"].MidImage = "rbxassetid://14731175383"
-Converted["_Script"].MidImageContent = Content
 Converted["_Script"].TopImage = "rbxassetid://16376858572"
-Converted["_Script"].TopImageContent = Content
 Converted["_Script"].Active = true
 Converted["_Script"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
 Converted["_Script"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
@@ -450,6 +441,8 @@ Converted["_inj"].Visible = false
 Converted["_inj"].Name = "inj"
 Converted["_inj"].Parent = Converted["_Executor1"]
 
+--Content
+
 Converted["_UICorner10"].Parent = Converted["_inj"]
 
 Converted["_UIStroke10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
@@ -468,12 +461,9 @@ Converted["_RSpy1"].Name = "RSpy"
 Converted["_RSpy1"].Parent = Converted["_Frame"]
 
 Converted["_Remotes"].BottomImage = "rbxassetid://16376862656"
-Converted["_Remotes"].BottomImageContent = Content
 Converted["_Remotes"].CanvasSize = UDim2.new(0, 0, 7, 0)
 Converted["_Remotes"].MidImage = "rbxassetid://14731175383"
-Converted["_Remotes"].MidImageContent = Content
 Converted["_Remotes"].TopImage = "rbxassetid://16376858572"
-Converted["_Remotes"].TopImageContent = Content
 Converted["_Remotes"].Active = true
 Converted["_Remotes"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
 Converted["_Remotes"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
@@ -485,12 +475,9 @@ Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
 Converted["_UIListLayout2"].Parent = Converted["_Remotes"]
 
 Converted["_Script1"].BottomImage = "rbxassetid://16376862656"
-Converted["_Script1"].BottomImageContent = Content
 Converted["_Script1"].CanvasSize = UDim2.new(0, 0, 7, 0)
 Converted["_Script1"].MidImage = "rbxassetid://14731175383"
-Converted["_Script1"].MidImageContent = Content
 Converted["_Script1"].TopImage = "rbxassetid://16376858572"
-Converted["_Script1"].TopImageContent = Content
 Converted["_Script1"].Active = true
 Converted["_Script1"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
 Converted["_Script1"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
@@ -590,7 +577,6 @@ Converted["_UIStroke13"].Thickness = 1.5
 Converted["_UIStroke13"].Parent = Converted["_Open"]
 
 Converted["_ImageLabel3"].Image = "rbxassetid://131112153"
-Converted["_ImageLabel3"].ImageContent = Content
 Converted["_ImageLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Converted["_ImageLabel3"].BackgroundTransparency = 1
 Converted["_ImageLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -746,6 +732,8 @@ local function ECFT_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Scr
 		]])()
 	end)
 end
+
+--Content
 local function JJLW_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Executor.Script.Box.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
