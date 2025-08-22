@@ -1,642 +1,842 @@
--- Generated using RoadToGlory's Converter v1.1 (RoadToGlory#9879)
-
--- Instances:
-
-local Converted = {
-	["_luadrogen"] = Instance.new("ScreenGui");
-	["_Frame"] = Instance.new("Frame");
-	["_CenterFrame"] = Instance.new("LocalScript");
-	["_UICorner"] = Instance.new("UICorner");
-	["_UIStroke"] = Instance.new("UIStroke");
-	["_ICON"] = Instance.new("ImageLabel");
-	["_TextLabel"] = Instance.new("TextLabel");
-	["_Minimize"] = Instance.new("TextButton");
-	["_UICorner1"] = Instance.new("UICorner");
-	["_UIStroke1"] = Instance.new("UIStroke");
-	["_LocalScript"] = Instance.new("LocalScript");
-	["_Line"] = Instance.new("Frame");
-	["_OPS"] = Instance.new("Frame");
-	["_UICorner2"] = Instance.new("UICorner");
-	["_UIStroke2"] = Instance.new("UIStroke");
-	["_UIListLayout"] = Instance.new("UIListLayout");
-	["_Scripts"] = Instance.new("Frame");
-	["_UIStroke3"] = Instance.new("UIStroke");
-	["_UICorner3"] = Instance.new("UICorner");
-	["_TextButton"] = Instance.new("TextButton");
-	["_LocalScript1"] = Instance.new("LocalScript");
-	["_ImageLabel"] = Instance.new("ImageLabel");
-	["_Executor"] = Instance.new("Frame");
-	["_UIStroke4"] = Instance.new("UIStroke");
-	["_UICorner4"] = Instance.new("UICorner");
-	["_TextButton1"] = Instance.new("TextButton");
-	["_LocalScript2"] = Instance.new("LocalScript");
-	["_ImageLabel1"] = Instance.new("ImageLabel");
-	["_RSpy"] = Instance.new("Frame");
-	["_UIStroke5"] = Instance.new("UIStroke");
-	["_UICorner5"] = Instance.new("UICorner");
-	["_TextButton2"] = Instance.new("TextButton");
-	["_LocalScript3"] = Instance.new("LocalScript");
-	["_ImageLabel2"] = Instance.new("ImageLabel");
-	["_Scripts1"] = Instance.new("ScrollingFrame");
-	["_UIListLayout1"] = Instance.new("UIListLayout");
-	["_TextButton3"] = Instance.new("TextButton");
-	["_UIStroke6"] = Instance.new("UIStroke");
-	["_UICorner6"] = Instance.new("UICorner");
-	["_LocalScript4"] = Instance.new("LocalScript");
-	["_Executor1"] = Instance.new("Frame");
-	["_Script"] = Instance.new("ScrollingFrame");
-	["_Box"] = Instance.new("TextBox");
-	["_LocalScript5"] = Instance.new("LocalScript");
-	["_TextLabel1"] = Instance.new("TextLabel");
-	["_exe"] = Instance.new("TextButton");
-	["_UICorner7"] = Instance.new("UICorner");
-	["_UIStroke7"] = Instance.new("UIStroke");
-	["_cls"] = Instance.new("TextButton");
-	["_UICorner8"] = Instance.new("UICorner");
-	["_UIStroke8"] = Instance.new("UIStroke");
-	["_SoC"] = Instance.new("TextButton");
-	["_UICorner9"] = Instance.new("UICorner");
-	["_UIStroke9"] = Instance.new("UIStroke");
-	["_inj"] = Instance.new("TextButton");
-	["_UICorner10"] = Instance.new("UICorner");
-	["_UIStroke10"] = Instance.new("UIStroke");
-	["_LocalScript6"] = Instance.new("LocalScript");
-	["_LocalScript7"] = Instance.new("LocalScript");
-	["_RSpy1"] = Instance.new("Frame");
-	["_Remotes"] = Instance.new("ScrollingFrame");
-	["_UIListLayout2"] = Instance.new("UIListLayout");
-	["_Script1"] = Instance.new("ScrollingFrame");
-	["_Box1"] = Instance.new("TextBox");
-	["_LocalScript8"] = Instance.new("LocalScript");
-	["_TextLabel2"] = Instance.new("TextLabel");
-	["_LocalScript9"] = Instance.new("LocalScript");
-	["_Func"] = Instance.new("Frame");
-	["_ImageLabel3"] = Instance.new("ImageLabel");
-	["_TextLabel3"] = Instance.new("TextLabel");
-	["_ShowCode"] = Instance.new("TextButton");
-	["_Event"] = Instance.new("Frame");
-	["_ImageLabel4"] = Instance.new("ImageLabel");
-	["_TextLabel4"] = Instance.new("TextLabel");
-	["_ShowCode1"] = Instance.new("TextButton");
-	["_cc"] = Instance.new("TextButton");
-	["_UICorner11"] = Instance.new("UICorner");
-	["_UIStroke11"] = Instance.new("UIStroke");
-	["_LocalScript10"] = Instance.new("LocalScript");
-	["_rc"] = Instance.new("TextButton");
-	["_UICorner12"] = Instance.new("UICorner");
-	["_UIStroke12"] = Instance.new("UIStroke");
-	["_LocalScript11"] = Instance.new("LocalScript");
-	["_Open"] = Instance.new("TextButton");
-	["_UICorner13"] = Instance.new("UICorner");
-	["_UIStroke13"] = Instance.new("UIStroke");
-	["_ImageLabel5"] = Instance.new("ImageLabel");
-	["_LocalScript12"] = Instance.new("LocalScript");
-	["_LocalScript13"] = Instance.new("LocalScript");
-	["_CenterFrame1"] = Instance.new("LocalScript");
-}
-
--- Properties:
-
-Converted["_luadrogen"].ResetOnSpawn = false
-Converted["_luadrogen"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Converted["_luadrogen"].Name = "luadrogen"
-Converted["_luadrogen"].Parent = game:GetService("CoreGui")
-
-Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Frame"].BorderSizePixel = 0
-Converted["_Frame"].Position = UDim2.new(0.307453424, 0, 0.27638191, 0)
-Converted["_Frame"].Size = UDim2.new(0, 478, 0, 286)
-Converted["_Frame"].Visible = false
-Converted["_Frame"].Parent = Converted["_luadrogen"]
-
-Converted["_UICorner"].Parent = Converted["_Frame"]
-
-Converted["_UIStroke"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke"].Thickness = 1.5
-Converted["_UIStroke"].Parent = Converted["_Frame"]
-
-Converted["_ICON"] = Instance.new("ImageLabel")
-Converted["_ICON"].Image = "rbxassetid://148252927"
-Converted["_ICON"].BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ICON"].BackgroundTransparency = 1
-Converted["_ICON"].BorderColor3 = Color3.fromRGB(0, 0, 126)
-Converted["_ICON"].Position = UDim2.new(0.0230125524, 0, 0.0244755242, 0)
-Converted["_ICON"].Size = UDim2.new(0, 45, 0, 47)
-Converted["_ICON"].Name = "ICON"
-Converted["_ICON"].Parent = Converted["_Frame"]
-
-Converted["_TextLabel"].Font = Enum.Font.Arial
-Converted["_TextLabel"].Text = "drogen"
-Converted["_TextLabel"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].TextSize = 19
-Converted["_TextLabel"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_TextLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel"].BackgroundTransparency = 1
-Converted["_TextLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel"].BorderSizePixel = 0
-Converted["_TextLabel"].Position = UDim2.new(-0.75555557, 0, 0, 0)
-Converted["_TextLabel"].Size = UDim2.new(0, 200, 0, 36)
-Converted["_TextLabel"].Parent = Converted["_ICON"]
-
-Converted["_Minimize"].Font = Enum.Font.Arial
-Converted["_Minimize"].Text = "-"
-Converted["_Minimize"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Minimize"].TextSize = 30
-Converted["_Minimize"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_Minimize"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Minimize"].BorderSizePixel = 0
-Converted["_Minimize"].Position = UDim2.new(0.891213417, 0, 0.0244755242, 0)
-Converted["_Minimize"].Size = UDim2.new(0, 43, 0, 43)
-Converted["_Minimize"].Name = "Minimize"
-Converted["_Minimize"].Parent = Converted["_Frame"]
-
-Converted["_UICorner1"].Parent = Converted["_Minimize"]
-
-Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke1"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke1"].Thickness = 1.5
-Converted["_UIStroke1"].Parent = Converted["_Minimize"]
-
-Converted["_Line"].BackgroundColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
-Converted["_Line"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Line"].BorderSizePixel = 0
-Converted["_Line"].Position = UDim2.new(0, 0, 0.192307696, 0)
-Converted["_Line"].Size = UDim2.new(0, 478, 0, -1)
-Converted["_Line"].Name = "Line"
-Converted["_Line"].Parent = Converted["_Frame"]
-
-Converted["_OPS"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_OPS"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
-Converted["_OPS"].Position = UDim2.new(0, 0, 0.192307696, 0)
-Converted["_OPS"].Size = UDim2.new(0, 100, 0, 231)
-Converted["_OPS"].Name = "OPS"
-Converted["_OPS"].Parent = Converted["_Frame"]
-
-Converted["_UICorner2"].Parent = Converted["_OPS"]
-
-Converted["_UIStroke2"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke2"].Thickness = 1.5
-Converted["_UIStroke2"].Parent = Converted["_OPS"]
-
-Converted["_UIListLayout"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout"].Parent = Converted["_OPS"]
-
-Converted["_Scripts"].BackgroundColor3 = Color3.fromRGB(60.00000402331352, 60.00000402331352, 60.00000402331352)
-Converted["_Scripts"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Scripts"].BorderSizePixel = 0
-Converted["_Scripts"].Size = UDim2.new(0, 100, 0, 30)
-Converted["_Scripts"].Name = "Scripts"
-Converted["_Scripts"].Parent = Converted["_OPS"]
-
-Converted["_UIStroke3"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke3"].Thickness = 1.5
-Converted["_UIStroke3"].Parent = Converted["_Scripts"]
-
-Converted["_UICorner3"].Parent = Converted["_Scripts"]
-
-Converted["_TextButton"].Font = Enum.Font.Arial
-Converted["_TextButton"].Text = "Scripts "
-Converted["_TextButton"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].TextSize = 14
-Converted["_TextButton"].TextXAlignment = Enum.TextXAlignment.Right
-Converted["_TextButton"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton"].BackgroundTransparency = 1
-Converted["_TextButton"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton"].BorderSizePixel = 0
-Converted["_TextButton"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextButton"].Parent = Converted["_Scripts"]
-
-Converted["_ImageLabel"].Image = "rbxassetid://30673364"
-Converted["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel"].BackgroundTransparency = 1
-Converted["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel"].BorderSizePixel = 0
-Converted["_ImageLabel"].Position = UDim2.new(0.109999999, 0, 0, 0)
-Converted["_ImageLabel"].Size = UDim2.new(0, 30, 0, 30)
-Converted["_ImageLabel"].Parent = Converted["_TextButton"]
-
-Converted["_Executor"].BackgroundColor3 = Color3.fromRGB(60.00000402331352, 60.00000402331352, 60.00000402331352)
-Converted["_Executor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Executor"].BorderSizePixel = 0
-Converted["_Executor"].Size = UDim2.new(0, 100, 0, 30)
-Converted["_Executor"].Name = "Executor"
-Converted["_Executor"].Parent = Converted["_OPS"]
-
-Converted["_UIStroke4"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke4"].Thickness = 1.5
-Converted["_UIStroke4"].Parent = Converted["_Executor"]
-
-Converted["_UICorner4"].Parent = Converted["_Executor"]
-
-Converted["_TextButton1"].Font = Enum.Font.Arial
-Converted["_TextButton1"].Text = "Executor "
-Converted["_TextButton1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton1"].TextSize = 14
-Converted["_TextButton1"].TextXAlignment = Enum.TextXAlignment.Right
-Converted["_TextButton1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton1"].BackgroundTransparency = 1
-Converted["_TextButton1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton1"].BorderSizePixel = 0
-Converted["_TextButton1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextButton1"].Parent = Converted["_Executor"]
-
-Converted["_ImageLabel1"].Image = "rbxassetid://46342657"
-Converted["_ImageLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel1"].BackgroundTransparency = 1
-Converted["_ImageLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel1"].BorderSizePixel = 0
-Converted["_ImageLabel1"].Position = UDim2.new(0.109999999, 0, 0, 0)
-Converted["_ImageLabel1"].Size = UDim2.new(0, 30, 0, 30)
-Converted["_ImageLabel1"].Parent = Converted["_TextButton1"]
-
-Converted["_RSpy"].BackgroundColor3 = Color3.fromRGB(60.00000402331352, 60.00000402331352, 60.00000402331352)
-Converted["_RSpy"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RSpy"].BorderSizePixel = 0
-Converted["_RSpy"].Size = UDim2.new(0, 100, 0, 30)
-Converted["_RSpy"].Name = "RSpy"
-Converted["_RSpy"].Parent = Converted["_OPS"]
-
-Converted["_UIStroke5"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke5"].Thickness = 1.5
-Converted["_UIStroke5"].Parent = Converted["_RSpy"]
-
-Converted["_UICorner5"].Parent = Converted["_RSpy"]
-
-Converted["_TextButton2"].Font = Enum.Font.Arial
-Converted["_TextButton2"].Text = "RSpy "
-Converted["_TextButton2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton2"].TextSize = 14
-Converted["_TextButton2"].TextXAlignment = Enum.TextXAlignment.Right
-Converted["_TextButton2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton2"].BackgroundTransparency = 1
-Converted["_TextButton2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton2"].BorderSizePixel = 0
-Converted["_TextButton2"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextButton2"].Parent = Converted["_RSpy"]
-
-Converted["_ImageLabel2"].Image = "rbxassetid://15170416971"
-Converted["_ImageLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel2"].BackgroundTransparency = 1
-Converted["_ImageLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel2"].BorderSizePixel = 0
-Converted["_ImageLabel2"].Position = UDim2.new(0.109999999, 0, 0, 0)
-Converted["_ImageLabel2"].Size = UDim2.new(0, 30, 0, 30)
-Converted["_ImageLabel2"].Parent = Converted["_TextButton2"]
-
-Converted["_Scripts1"].BottomImage = "rbxassetid://16376862656"
-Converted["_Scripts1"].MidImage = "rbxassetid://14731175383"
-Converted["_Scripts1"].TopImage = "rbxassetid://16376858572"
-Converted["_Scripts1"].Active = true
-Converted["_Scripts1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Scripts1"].BackgroundTransparency = 1
-Converted["_Scripts1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Scripts1"].BorderSizePixel = 0
-Converted["_Scripts1"].Position = UDim2.new(0.209205016, 0, 0.192307696, 0)
-Converted["_Scripts1"].Size = UDim2.new(0, 378, 0, 231)
-Converted["_Scripts1"].Visible = false
-Converted["_Scripts1"].Name = "Scripts"
-Converted["_Scripts1"].Parent = Converted["_Frame"]
-
-Converted["_UIListLayout1"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout1"].Parent = Converted["_Scripts1"]
-
-Converted["_TextButton3"].Font = Enum.Font.Arial
-Converted["_TextButton3"].Text = "Hydroxide"
-Converted["_TextButton3"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextButton3"].TextSize = 14
-Converted["_TextButton3"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_TextButton3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextButton3"].BorderSizePixel = 0
-Converted["_TextButton3"].Size = UDim2.new(0, 362, 0, 16)
-Converted["_TextButton3"].Parent = Converted["_Scripts1"]
-
-Converted["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke6"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke6"].Thickness = 1.5
-Converted["_UIStroke6"].Parent = Converted["_TextButton3"]
-
-Converted["_UICorner6"].Parent = Converted["_TextButton3"]
-
-Converted["_Executor1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Executor1"].BackgroundTransparency = 1
-Converted["_Executor1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Executor1"].BorderSizePixel = 0
-Converted["_Executor1"].Position = UDim2.new(0.209000006, 0, 0.192000002, 0)
-Converted["_Executor1"].Size = UDim2.new(0, 378, 0, 231)
-Converted["_Executor1"].Visible = false
-Converted["_Executor1"].Name = "Executor"
-Converted["_Executor1"].Parent = Converted["_Frame"]
-
-Converted["_Script"].BottomImage = "rbxassetid://16376862656"
-Converted["_Script"].CanvasSize = UDim2.new(0, 0, 10000, 0)
-Converted["_Script"].MidImage = "rbxassetid://14731175383"
-Converted["_Script"].TopImage = "rbxassetid://16376858572"
-Converted["_Script"].Active = true
-Converted["_Script"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
-Converted["_Script"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
-Converted["_Script"].Position = UDim2.new(0.0317460336, 0, 0.0432900451, 0)
-Converted["_Script"].Size = UDim2.new(0, 314, 0, 136)
-Converted["_Script"].Name = "Script"
-Converted["_Script"].Parent = Converted["_Executor1"]
-
-Converted["_Box"].ClearTextOnFocus = false
-Converted["_Box"].CursorPosition = -1
-Converted["_Box"].Font = Enum.Font.RobotoMono
-Converted["_Box"].MultiLine = true
-Converted["_Box"].Text = ""
-Converted["_Box"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box"].TextSize = 14
-Converted["_Box"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Box"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Box"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box"].BackgroundTransparency = 1
-Converted["_Box"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Box"].BorderSizePixel = 0
-Converted["_Box"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Box"].Name = "Box"
-Converted["_Box"].Parent = Converted["_Script"]
-
-Converted["_TextLabel1"].Font = Enum.Font.RobotoMono
-Converted["_TextLabel1"].RichText = true
-Converted["_TextLabel1"].Text = ""
-Converted["_TextLabel1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].TextSize = 14
-Converted["_TextLabel1"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_TextLabel1"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_TextLabel1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel1"].BackgroundTransparency = 1
-Converted["_TextLabel1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel1"].BorderSizePixel = 0
-Converted["_TextLabel1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextLabel1"].Parent = Converted["_Box"]
-
-Converted["_exe"].Font = Enum.Font.Arial
-Converted["_exe"].Text = "Execute"
-Converted["_exe"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_exe"].TextSize = 17
-Converted["_exe"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_exe"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_exe"].BorderSizePixel = 0
-Converted["_exe"].Position = UDim2.new(0.0314250328, 0, 0.68248415, 0)
-Converted["_exe"].Size = UDim2.new(0, 134, 0, 25)
-Converted["_exe"].Name = "exe"
-Converted["_exe"].Parent = Converted["_Executor1"]
-
-Converted["_UICorner7"].Parent = Converted["_exe"]
-
-Converted["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke7"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke7"].Thickness = 1.5
-Converted["_UIStroke7"].Parent = Converted["_exe"]
-
-Converted["_cls"].Font = Enum.Font.Arial
-Converted["_cls"].Text = "Clear"
-Converted["_cls"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_cls"].TextSize = 17
-Converted["_cls"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_cls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_cls"].BorderSizePixel = 0
-Converted["_cls"].Position = UDim2.new(0.0314250328, 0, 0.833999276, 0)
-Converted["_cls"].Size = UDim2.new(0, 134, 0, 25)
-Converted["_cls"].Name = "cls"
-Converted["_cls"].Parent = Converted["_Executor1"]
-
-Converted["_UICorner8"].Parent = Converted["_cls"]
-
-Converted["_UIStroke8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke8"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke8"].Thickness = 1.5
-Converted["_UIStroke8"].Parent = Converted["_cls"]
-
-Converted["_SoC"].Font = Enum.Font.Arial
-Converted["_SoC"].Text = "GOTO server"
-Converted["_SoC"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_SoC"].TextSize = 17
-Converted["_SoC"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_SoC"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_SoC"].BorderSizePixel = 0
-Converted["_SoC"].Position = UDim2.new(0.425604939, 0, 0.68248415, 0)
-Converted["_SoC"].Size = UDim2.new(0, 134, 0, 25)
-Converted["_SoC"].Name = "SoC"
-Converted["_SoC"].Parent = Converted["_Executor1"]
-
-Converted["_UICorner9"].Parent = Converted["_SoC"]
-
-Converted["_UIStroke9"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke9"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke9"].Thickness = 1.5
-Converted["_UIStroke9"].Parent = Converted["_SoC"]
-
-Converted["_inj"].Font = Enum.Font.Arial
-Converted["_inj"].Text = "Inject"
-Converted["_inj"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_inj"].TextSize = 17
-Converted["_inj"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_inj"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_inj"].BorderSizePixel = 0
-Converted["_inj"].Position = UDim2.new(0.425604939, 0, 0.833999276, 0)
-Converted["_inj"].Size = UDim2.new(0, 134, 0, 25)
-Converted["_inj"].Visible = false
-Converted["_inj"].Name = "inj"
-Converted["_inj"].Parent = Converted["_Executor1"]
-
---Content
-
-Converted["_UICorner10"].Parent = Converted["_inj"]
-
-Converted["_UIStroke10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke10"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke10"].Thickness = 1.5
-Converted["_UIStroke10"].Parent = Converted["_inj"]
-
-Converted["_RSpy1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_RSpy1"].BackgroundTransparency = 1
-Converted["_RSpy1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_RSpy1"].BorderSizePixel = 0
-Converted["_RSpy1"].Position = UDim2.new(0.209000006, 0, 0.192000002, 0)
-Converted["_RSpy1"].Size = UDim2.new(0, 378, 0, 231)
-Converted["_RSpy1"].Visible = false
-Converted["_RSpy1"].Name = "RSpy"
-Converted["_RSpy1"].Parent = Converted["_Frame"]
-
-Converted["_Remotes"].BottomImage = "rbxassetid://16376862656"
-Converted["_Remotes"].CanvasSize = UDim2.new(0, 0, 7, 0)
-Converted["_Remotes"].MidImage = "rbxassetid://14731175383"
-Converted["_Remotes"].TopImage = "rbxassetid://16376858572"
-Converted["_Remotes"].Active = true
-Converted["_Remotes"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
-Converted["_Remotes"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
-Converted["_Remotes"].Size = UDim2.new(0, 140, 0, 231)
-Converted["_Remotes"].Name = "Remotes"
-Converted["_Remotes"].Parent = Converted["_RSpy1"]
-
-Converted["_UIListLayout2"].SortOrder = Enum.SortOrder.LayoutOrder
-Converted["_UIListLayout2"].Parent = Converted["_Remotes"]
-
-Converted["_Script1"].BottomImage = "rbxassetid://16376862656"
-Converted["_Script1"].CanvasSize = UDim2.new(0, 0, 7, 0)
-Converted["_Script1"].MidImage = "rbxassetid://14731175383"
-Converted["_Script1"].TopImage = "rbxassetid://16376858572"
-Converted["_Script1"].Active = true
-Converted["_Script1"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
-Converted["_Script1"].BorderColor3 = Color3.fromRGB(0, 0, 128.0000075697899)
-Converted["_Script1"].Position = UDim2.new(0.370370358, 0, 0, 0)
-Converted["_Script1"].Size = UDim2.new(0, 238, 0, 115)
-Converted["_Script1"].Name = "Script"
-Converted["_Script1"].Parent = Converted["_RSpy1"]
-
-Converted["_Box1"].CursorPosition = -1
-Converted["_Box1"].Font = Enum.Font.RobotoMono
-Converted["_Box1"].Text = ""
-Converted["_Box1"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box1"].TextEditable = false
-Converted["_Box1"].TextSize = 14
-Converted["_Box1"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_Box1"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_Box1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Box1"].BackgroundTransparency = 1
-Converted["_Box1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Box1"].BorderSizePixel = 0
-Converted["_Box1"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_Box1"].Name = "Box"
-Converted["_Box1"].Parent = Converted["_Script1"]
-
-Converted["_TextLabel2"].Font = Enum.Font.RobotoMono
-Converted["_TextLabel2"].RichText = true
-Converted["_TextLabel2"].Text = ""
-Converted["_TextLabel2"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].TextSize = 14
-Converted["_TextLabel2"].TextXAlignment = Enum.TextXAlignment.Left
-Converted["_TextLabel2"].TextYAlignment = Enum.TextYAlignment.Top
-Converted["_TextLabel2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_TextLabel2"].BackgroundTransparency = 1
-Converted["_TextLabel2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_TextLabel2"].BorderSizePixel = 0
-Converted["_TextLabel2"].Size = UDim2.new(1, 0, 1, 0)
-Converted["_TextLabel2"].Parent = Converted["_Box1"]
-
-Converted["_cc"].Font = Enum.Font.Arial
-Converted["_cc"].Text = "Copy Code"
-Converted["_cc"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_cc"].TextSize = 13
-Converted["_cc"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_cc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_cc"].BorderSizePixel = 0
-Converted["_cc"].Position = UDim2.new(0.402116388, 0, 0.532467544, 0)
-Converted["_cc"].Size = UDim2.new(0, 83, 0, 18)
-Converted["_cc"].Name = "cc"
-Converted["_cc"].Parent = Converted["_RSpy1"]
-
-Converted["_UICorner11"].Parent = Converted["_cc"]
-
-Converted["_UIStroke11"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke11"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke11"].Thickness = 1.5
-Converted["_UIStroke11"].Parent = Converted["_cc"]
-
-Converted["_rc"].Font = Enum.Font.Arial
-Converted["_rc"].Text = "Run Code"
-Converted["_rc"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_rc"].TextSize = 13
-Converted["_rc"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_rc"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_rc"].BorderSizePixel = 0
-Converted["_rc"].Position = UDim2.new(0.642857134, 0, 0.532467544, 0)
-Converted["_rc"].Size = UDim2.new(0, 83, 0, 18)
-Converted["_rc"].Name = "rc"
-Converted["_rc"].Parent = Converted["_RSpy1"]
-
-Converted["_UICorner12"].Parent = Converted["_rc"]
-
-Converted["_UIStroke12"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke12"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke12"].Thickness = 1.5
-Converted["_UIStroke12"].Parent = Converted["_rc"]
-
-Converted["_Open"].Font = Enum.Font.Arial
-Converted["_Open"].Text = "drogen"
-Converted["_Open"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_Open"].TextSize = 19
-Converted["_Open"].TextWrapped = true
-Converted["_Open"].TextXAlignment = Enum.TextXAlignment.Right
-Converted["_Open"].TextYAlignment = Enum.TextYAlignment.Bottom
-Converted["_Open"].BackgroundColor3 = Color3.fromRGB(29.000002071261406, 29.000002071261406, 29.000002071261406)
-Converted["_Open"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_Open"].BorderSizePixel = 0
-Converted["_Open"].Position = UDim2.new(0.568232, 0, 0.0596513972, 0)
-Converted["_Open"].Size = UDim2.new(0, 67, 0, 63)
-Converted["_Open"].Name = "Open"
-Converted["_Open"].Parent = Converted["_luadrogen"]
-
-Converted["_UICorner13"].Parent = Converted["_Open"]
-
-Converted["_UIStroke13"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Converted["_UIStroke13"].Color = Color3.fromRGB(1.0000000591389835, 1.0000000591389835, 128.0000075697899)
-Converted["_UIStroke13"].Thickness = 1.5
-Converted["_UIStroke13"].Parent = Converted["_Open"]
-
-Converted["_ImageLabel3"].Image = "rbxassetid://131112153"
-Converted["_ImageLabel3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Converted["_ImageLabel3"].BackgroundTransparency = 1
-Converted["_ImageLabel3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Converted["_ImageLabel3"].BorderSizePixel = 0
-Converted["_ImageLabel3"].Size = UDim2.new(0, 48, 0, 48)
-Converted["_ImageLabel3"].Parent = Converted["_Open"]
-
--- Fake Module Scripts:
-
-local fake_module_scripts = {}
-
-
--- Fake Local Scripts:
-
-local function YZOS_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.CenterFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "CenterFrame"
-    script.Parent = Converted["_Frame"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
 
+-- Instances: 90 | Scripts: 16 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.luadrogen
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[luadrogen]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.luadrogen.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["Visible"] = false;
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["2"]["Size"] = UDim2.new(0, 478, 0, 286);
+G2L["2"]["Position"] = UDim2.new(0.30745, 0, 0.27638, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.CenterFrame
+G2L["3"] = Instance.new("LocalScript", G2L["2"]);
+G2L["3"]["Name"] = [[CenterFrame]];
+
+
+-- StarterGui.luadrogen.Frame.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.luadrogen.Frame.UIStroke
+G2L["5"] = Instance.new("UIStroke", G2L["2"]);
+G2L["5"]["Thickness"] = 1.5;
+G2L["5"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.ICON
+G2L["6"] = Instance.new("ImageLabel", G2L["2"]);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["6"]["Image"] = [[rbxassetid://148252927]];
+G2L["6"]["Size"] = UDim2.new(0, 45, 0, 47);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 127);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Name"] = [[ICON]];
+G2L["6"]["Position"] = UDim2.new(0.02301, 0, 0.02448, 0);
+
+
+-- StarterGui.luadrogen.Frame.ICON.TextLabel
+G2L["7"] = Instance.new("TextLabel", G2L["6"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 19;
+G2L["7"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["Size"] = UDim2.new(0, 200, 0, 36);
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[drogen]];
+G2L["7"]["Position"] = UDim2.new(-0.75556, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.Minimize
+G2L["8"] = Instance.new("TextButton", G2L["2"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 30;
+G2L["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 43, 0, 43);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[-]];
+G2L["8"]["Name"] = [[Minimize]];
+G2L["8"]["Position"] = UDim2.new(0.89121, 0, 0.02448, 0);
+
+
+-- StarterGui.luadrogen.Frame.Minimize.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Minimize.UIStroke
+G2L["a"] = Instance.new("UIStroke", G2L["8"]);
+G2L["a"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["a"]["Thickness"] = 1.5;
+G2L["a"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Minimize.LocalScript
+G2L["b"] = Instance.new("LocalScript", G2L["8"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Line
+G2L["c"] = Instance.new("Frame", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 129);
+G2L["c"]["Size"] = UDim2.new(0, 478, 0, -1);
+G2L["c"]["Position"] = UDim2.new(0, 0, 0.19231, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[Line]];
+
+
+-- StarterGui.luadrogen.Frame.OPS
+G2L["d"] = Instance.new("Frame", G2L["2"]);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["d"]["Size"] = UDim2.new(0, 100, 0, 231);
+G2L["d"]["Position"] = UDim2.new(0, 0, 0.19231, 0);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+G2L["d"]["Name"] = [[OPS]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.UICorner
+G2L["e"] = Instance.new("UICorner", G2L["d"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.UIStroke
+G2L["f"] = Instance.new("UIStroke", G2L["d"]);
+G2L["f"]["Thickness"] = 1.5;
+G2L["f"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.OPS.UIListLayout
+G2L["10"] = Instance.new("UIListLayout", G2L["d"]);
+G2L["10"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts
+G2L["11"] = Instance.new("Frame", G2L["d"]);
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["11"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Name"] = [[Scripts]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts.UIStroke
+G2L["12"] = Instance.new("UIStroke", G2L["11"]);
+G2L["12"]["Thickness"] = 1.5;
+G2L["12"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["11"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts.TextButton
+G2L["14"] = Instance.new("TextButton", G2L["11"]);
+G2L["14"]["BorderSizePixel"] = 0;
+G2L["14"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["14"]["TextSize"] = 14;
+G2L["14"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["14"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["14"]["BackgroundTransparency"] = 1;
+G2L["14"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["14"]["Text"] = [[Scripts ]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts.TextButton.LocalScript
+G2L["15"] = Instance.new("LocalScript", G2L["14"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.Scripts.TextButton.ImageLabel
+G2L["16"] = Instance.new("ImageLabel", G2L["14"]);
+G2L["16"]["BorderSizePixel"] = 0;
+G2L["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["16"]["Image"] = [[rbxassetid://30673364]];
+G2L["16"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["16"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["16"]["BackgroundTransparency"] = 1;
+G2L["16"]["Position"] = UDim2.new(0.11, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor
+G2L["17"] = Instance.new("Frame", G2L["d"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["17"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Name"] = [[Executor]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor.UIStroke
+G2L["18"] = Instance.new("UIStroke", G2L["17"]);
+G2L["18"]["Thickness"] = 1.5;
+G2L["18"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["17"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor.TextButton
+G2L["1a"] = Instance.new("TextButton", G2L["17"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["BackgroundTransparency"] = 1;
+G2L["1a"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Executor ]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor.TextButton.LocalScript
+G2L["1b"] = Instance.new("LocalScript", G2L["1a"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.Executor.TextButton.ImageLabel
+G2L["1c"] = Instance.new("ImageLabel", G2L["1a"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1c"]["Image"] = [[rbxassetid://46342657]];
+G2L["1c"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["BackgroundTransparency"] = 1;
+G2L["1c"]["Position"] = UDim2.new(0.11, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy
+G2L["1d"] = Instance.new("Frame", G2L["d"]);
+G2L["1d"]["BorderSizePixel"] = 0;
+G2L["1d"]["BackgroundColor3"] = Color3.fromRGB(61, 61, 61);
+G2L["1d"]["Size"] = UDim2.new(0, 100, 0, 30);
+G2L["1d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1d"]["Name"] = [[RSpy]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy.UIStroke
+G2L["1e"] = Instance.new("UIStroke", G2L["1d"]);
+G2L["1e"]["Thickness"] = 1.5;
+G2L["1e"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy.UICorner
+G2L["1f"] = Instance.new("UICorner", G2L["1d"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy.TextButton
+G2L["20"] = Instance.new("TextButton", G2L["1d"]);
+G2L["20"]["BorderSizePixel"] = 0;
+G2L["20"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["20"]["TextSize"] = 14;
+G2L["20"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["20"]["BackgroundTransparency"] = 1;
+G2L["20"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["20"]["Text"] = [[RSpy ]];
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy.TextButton.LocalScript
+G2L["21"] = Instance.new("LocalScript", G2L["20"]);
+
+
+
+-- StarterGui.luadrogen.Frame.OPS.RSpy.TextButton.ImageLabel
+G2L["22"] = Instance.new("ImageLabel", G2L["20"]);
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["22"]["Image"] = [[rbxassetid://15170416971]];
+G2L["22"]["Size"] = UDim2.new(0, 30, 0, 30);
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["Position"] = UDim2.new(0.11, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.Scripts
+G2L["23"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["23"]["Visible"] = false;
+G2L["23"]["Active"] = true;
+G2L["23"]["BorderSizePixel"] = 0;
+G2L["23"]["TopImage"] = [[rbxassetid://16376858572]];
+G2L["23"]["MidImage"] = [[rbxassetid://14731175383]];
+G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["23"]["Name"] = [[Scripts]];
+G2L["23"]["BottomImage"] = [[rbxassetid://16376862656]];
+G2L["23"]["Size"] = UDim2.new(0, 378, 0, 231);
+G2L["23"]["Position"] = UDim2.new(0.20921, 0, 0.19231, 0);
+G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["23"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.Scripts.UIListLayout
+G2L["24"] = Instance.new("UIListLayout", G2L["23"]);
+G2L["24"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.luadrogen.Frame.Scripts.TextButton
+G2L["25"] = Instance.new("TextButton", G2L["23"]);
+G2L["25"]["BorderSizePixel"] = 0;
+G2L["25"]["TextSize"] = 14;
+G2L["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["25"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["25"]["Size"] = UDim2.new(0, 362, 0, 16);
+G2L["25"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["25"]["Text"] = [[Hydroxide]];
+
+
+-- StarterGui.luadrogen.Frame.Scripts.TextButton.UIStroke
+G2L["26"] = Instance.new("UIStroke", G2L["25"]);
+G2L["26"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["26"]["Thickness"] = 1.5;
+G2L["26"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Scripts.TextButton.UICorner
+G2L["27"] = Instance.new("UICorner", G2L["25"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Scripts.TextButton.LocalScript
+G2L["28"] = Instance.new("LocalScript", G2L["25"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor
+G2L["29"] = Instance.new("Frame", G2L["2"]);
+G2L["29"]["Visible"] = false;
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Size"] = UDim2.new(0, 378, 0, 231);
+G2L["29"]["Position"] = UDim2.new(0.209, 0, 0.192, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Name"] = [[Executor]];
+G2L["29"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.Executor.Script
+G2L["2a"] = Instance.new("ScrollingFrame", G2L["29"]);
+G2L["2a"]["Active"] = true;
+G2L["2a"]["CanvasSize"] = UDim2.new(0, 0, 10000, 0);
+G2L["2a"]["TopImage"] = [[rbxassetid://16376858572]];
+G2L["2a"]["MidImage"] = [[rbxassetid://14731175383]];
+G2L["2a"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["2a"]["Name"] = [[Script]];
+G2L["2a"]["BottomImage"] = [[rbxassetid://16376862656]];
+G2L["2a"]["Size"] = UDim2.new(0, 314, 0, 136);
+G2L["2a"]["Position"] = UDim2.new(0.03175, 0, 0.04329, 0);
+G2L["2a"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+
+
+-- StarterGui.luadrogen.Frame.Executor.Script.Box
+G2L["2b"] = Instance.new("TextBox", G2L["2a"]);
+G2L["2b"]["Name"] = [[Box]];
+G2L["2b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2b"]["BorderSizePixel"] = 0;
+G2L["2b"]["TextSize"] = 14;
+G2L["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2b"]["MultiLine"] = true;
+G2L["2b"]["ClearTextOnFocus"] = false;
+G2L["2b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2b"]["Text"] = [[]];
+G2L["2b"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.Executor.Script.Box.LocalScript
+G2L["2c"] = Instance.new("LocalScript", G2L["2b"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor.Script.Box.TextLabel
+G2L["2d"] = Instance.new("TextLabel", G2L["2b"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["TextSize"] = 14;
+G2L["2d"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["2d"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["BackgroundTransparency"] = 1;
+G2L["2d"]["RichText"] = true;
+G2L["2d"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Text"] = [[]];
+
+
+-- StarterGui.luadrogen.Frame.Executor.exe
+G2L["2e"] = Instance.new("TextButton", G2L["29"]);
+G2L["2e"]["BorderSizePixel"] = 0;
+G2L["2e"]["TextSize"] = 17;
+G2L["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2e"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2e"]["Size"] = UDim2.new(0, 134, 0, 25);
+G2L["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2e"]["Text"] = [[Execute]];
+G2L["2e"]["Name"] = [[exe]];
+G2L["2e"]["Position"] = UDim2.new(0.03143, 0, 0.68248, 0);
+
+
+-- StarterGui.luadrogen.Frame.Executor.exe.UICorner
+G2L["2f"] = Instance.new("UICorner", G2L["2e"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor.exe.UIStroke
+G2L["30"] = Instance.new("UIStroke", G2L["2e"]);
+G2L["30"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["30"]["Thickness"] = 1.5;
+G2L["30"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Executor.cls
+G2L["31"] = Instance.new("TextButton", G2L["29"]);
+G2L["31"]["BorderSizePixel"] = 0;
+G2L["31"]["TextSize"] = 17;
+G2L["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["31"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["31"]["Size"] = UDim2.new(0, 134, 0, 25);
+G2L["31"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["31"]["Text"] = [[Clear]];
+G2L["31"]["Name"] = [[cls]];
+G2L["31"]["Position"] = UDim2.new(0.03143, 0, 0.834, 0);
+
+
+-- StarterGui.luadrogen.Frame.Executor.cls.UICorner
+G2L["32"] = Instance.new("UICorner", G2L["31"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor.cls.UIStroke
+G2L["33"] = Instance.new("UIStroke", G2L["31"]);
+G2L["33"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["33"]["Thickness"] = 1.5;
+G2L["33"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Executor.SoC
+G2L["34"] = Instance.new("TextButton", G2L["29"]);
+G2L["34"]["BorderSizePixel"] = 0;
+G2L["34"]["TextSize"] = 17;
+G2L["34"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["34"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["34"]["Size"] = UDim2.new(0, 134, 0, 25);
+G2L["34"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["34"]["Text"] = [[GOTO server]];
+G2L["34"]["Name"] = [[SoC]];
+G2L["34"]["Position"] = UDim2.new(0.4256, 0, 0.68248, 0);
+
+
+-- StarterGui.luadrogen.Frame.Executor.SoC.UICorner
+G2L["35"] = Instance.new("UICorner", G2L["34"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor.SoC.UIStroke
+G2L["36"] = Instance.new("UIStroke", G2L["34"]);
+G2L["36"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["36"]["Thickness"] = 1.5;
+G2L["36"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Executor.inj
+G2L["37"] = Instance.new("TextButton", G2L["29"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["TextSize"] = 17;
+G2L["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["37"]["Size"] = UDim2.new(0, 134, 0, 25);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Text"] = [[Inject]];
+G2L["37"]["Name"] = [[inj]];
+G2L["37"]["Visible"] = false;
+G2L["37"]["Position"] = UDim2.new(0.4256, 0, 0.834, 0);
+
+
+-- StarterGui.luadrogen.Frame.Executor.inj.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+
+
+
+-- StarterGui.luadrogen.Frame.Executor.inj.UIStroke
+G2L["39"] = Instance.new("UIStroke", G2L["37"]);
+G2L["39"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["39"]["Thickness"] = 1.5;
+G2L["39"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.Executor.LocalScript
+G2L["3a"] = Instance.new("LocalScript", G2L["29"]);
+
+
+
+-- StarterGui.luadrogen.Frame.LocalScript
+G2L["3b"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy
+G2L["3c"] = Instance.new("Frame", G2L["2"]);
+G2L["3c"]["Visible"] = false;
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["Size"] = UDim2.new(0, 378, 0, 231);
+G2L["3c"]["Position"] = UDim2.new(0.209, 0, 0.192, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[RSpy]];
+G2L["3c"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Remotes
+G2L["3d"] = Instance.new("ScrollingFrame", G2L["3c"]);
+G2L["3d"]["Active"] = true;
+G2L["3d"]["CanvasSize"] = UDim2.new(0, 0, 7, 0);
+G2L["3d"]["TopImage"] = [[rbxassetid://16376858572]];
+G2L["3d"]["MidImage"] = [[rbxassetid://14731175383]];
+G2L["3d"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["3d"]["Name"] = [[Remotes]];
+G2L["3d"]["BottomImage"] = [[rbxassetid://16376862656]];
+G2L["3d"]["Size"] = UDim2.new(0, 140, 0, 231);
+G2L["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Remotes.UIListLayout
+G2L["3e"] = Instance.new("UIListLayout", G2L["3d"]);
+G2L["3e"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Script
+G2L["3f"] = Instance.new("ScrollingFrame", G2L["3c"]);
+G2L["3f"]["Active"] = true;
+G2L["3f"]["CanvasSize"] = UDim2.new(0, 0, 7, 0);
+G2L["3f"]["TopImage"] = [[rbxassetid://16376858572]];
+G2L["3f"]["MidImage"] = [[rbxassetid://14731175383]];
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["3f"]["Name"] = [[Script]];
+G2L["3f"]["BottomImage"] = [[rbxassetid://16376862656]];
+G2L["3f"]["Size"] = UDim2.new(0, 238, 0, 115);
+G2L["3f"]["Position"] = UDim2.new(0.37037, 0, 0, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Script.Box
+G2L["40"] = Instance.new("TextBox", G2L["3f"]);
+G2L["40"]["Name"] = [[Box]];
+G2L["40"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["TextEditable"] = false;
+G2L["40"]["TextSize"] = 14;
+G2L["40"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["40"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Text"] = [[]];
+G2L["40"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Script.Box.LocalScript
+G2L["41"] = Instance.new("LocalScript", G2L["40"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy.Script.Box.TextLabel
+G2L["42"] = Instance.new("TextLabel", G2L["40"]);
+G2L["42"]["BorderSizePixel"] = 0;
+G2L["42"]["TextSize"] = 14;
+G2L["42"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["42"]["TextYAlignment"] = Enum.TextYAlignment.Top;
+G2L["42"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["42"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["42"]["BackgroundTransparency"] = 1;
+G2L["42"]["RichText"] = true;
+G2L["42"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["42"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["42"]["Text"] = [[]];
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript
+G2L["43"] = Instance.new("LocalScript", G2L["3c"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Func
+G2L["44"] = Instance.new("Frame", G2L["43"]);
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["44"]["Size"] = UDim2.new(0, 126, 0, 23);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+G2L["44"]["Name"] = [[Func]];
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Func.ImageLabel
+G2L["45"] = Instance.new("ImageLabel", G2L["44"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["45"]["Image"] = [[rbxassetid://109749792759362]];
+G2L["45"]["Size"] = UDim2.new(0, 23, 0, 23);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Func.TextLabel
+G2L["46"] = Instance.new("TextLabel", G2L["44"]);
+G2L["46"]["BorderSizePixel"] = 0;
+G2L["46"]["TextSize"] = 18;
+G2L["46"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["46"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["46"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["46"]["BackgroundTransparency"] = 1;
+G2L["46"]["Size"] = UDim2.new(0, 93, 0, 23);
+G2L["46"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["46"]["Text"] = [[{name}]];
+G2L["46"]["Position"] = UDim2.new(0.18254, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Func.ShowCode
+G2L["47"] = Instance.new("TextButton", G2L["44"]);
+G2L["47"]["BorderSizePixel"] = 0;
+G2L["47"]["TextSize"] = 14;
+G2L["47"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["47"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["47"]["BackgroundTransparency"] = 1;
+G2L["47"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["47"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["47"]["Text"] = [[]];
+G2L["47"]["Name"] = [[ShowCode]];
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Event
+G2L["48"] = Instance.new("Frame", G2L["43"]);
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["48"]["Size"] = UDim2.new(0, 126, 0, 23);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 129);
+G2L["48"]["Name"] = [[Event]];
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Event.ImageLabel
+G2L["49"] = Instance.new("ImageLabel", G2L["48"]);
+G2L["49"]["BorderSizePixel"] = 0;
+G2L["49"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["49"]["Image"] = [[rbxassetid://116520720569308]];
+G2L["49"]["Size"] = UDim2.new(0, 23, 0, 23);
+G2L["49"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["49"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Event.TextLabel
+G2L["4a"] = Instance.new("TextLabel", G2L["48"]);
+G2L["4a"]["BorderSizePixel"] = 0;
+G2L["4a"]["TextSize"] = 18;
+G2L["4a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["4a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4a"]["BackgroundTransparency"] = 1;
+G2L["4a"]["Size"] = UDim2.new(0, 93, 0, 23);
+G2L["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4a"]["Text"] = [[{name}]];
+G2L["4a"]["Position"] = UDim2.new(0.18254, 0, 0, 0);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript.Event.ShowCode
+G2L["4b"] = Instance.new("TextButton", G2L["48"]);
+G2L["4b"]["BorderSizePixel"] = 0;
+G2L["4b"]["TextSize"] = 14;
+G2L["4b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4b"]["BackgroundTransparency"] = 1;
+G2L["4b"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["4b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4b"]["Text"] = [[]];
+G2L["4b"]["Name"] = [[ShowCode]];
+
+
+-- StarterGui.luadrogen.Frame.RSpy.cc
+G2L["4c"] = Instance.new("TextButton", G2L["3c"]);
+G2L["4c"]["BorderSizePixel"] = 0;
+G2L["4c"]["TextSize"] = 13;
+G2L["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4c"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4c"]["Size"] = UDim2.new(0, 83, 0, 18);
+G2L["4c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4c"]["Text"] = [[Copy Code]];
+G2L["4c"]["Name"] = [[cc]];
+G2L["4c"]["Position"] = UDim2.new(0.40212, 0, 0.53247, 0);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.cc.UICorner
+G2L["4d"] = Instance.new("UICorner", G2L["4c"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy.cc.UIStroke
+G2L["4e"] = Instance.new("UIStroke", G2L["4c"]);
+G2L["4e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["4e"]["Thickness"] = 1.5;
+G2L["4e"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.cc.LocalScript
+G2L["4f"] = Instance.new("LocalScript", G2L["4c"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy.rc
+G2L["50"] = Instance.new("TextButton", G2L["3c"]);
+G2L["50"]["BorderSizePixel"] = 0;
+G2L["50"]["TextSize"] = 13;
+G2L["50"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["50"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["50"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["50"]["Size"] = UDim2.new(0, 83, 0, 18);
+G2L["50"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["50"]["Text"] = [[Run Code]];
+G2L["50"]["Name"] = [[rc]];
+G2L["50"]["Position"] = UDim2.new(0.64286, 0, 0.53247, 0);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.rc.UICorner
+G2L["51"] = Instance.new("UICorner", G2L["50"]);
+
+
+
+-- StarterGui.luadrogen.Frame.RSpy.rc.UIStroke
+G2L["52"] = Instance.new("UIStroke", G2L["50"]);
+G2L["52"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["52"]["Thickness"] = 1.5;
+G2L["52"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Frame.RSpy.rc.LocalScript
+G2L["53"] = Instance.new("LocalScript", G2L["50"]);
+
+
+
+-- StarterGui.luadrogen.Open
+G2L["54"] = Instance.new("TextButton", G2L["1"]);
+G2L["54"]["TextWrapped"] = true;
+G2L["54"]["BorderSizePixel"] = 0;
+G2L["54"]["TextXAlignment"] = Enum.TextXAlignment.Right;
+G2L["54"]["TextSize"] = 19;
+G2L["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["54"]["TextYAlignment"] = Enum.TextYAlignment.Bottom;
+G2L["54"]["BackgroundColor3"] = Color3.fromRGB(30, 30, 30);
+G2L["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["54"]["Size"] = UDim2.new(0, 67, 0, 63);
+G2L["54"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["54"]["Text"] = [[drogen]];
+G2L["54"]["Name"] = [[Open]];
+G2L["54"]["Position"] = UDim2.new(0.56823, 0, 0.05965, 0);
+
+
+-- StarterGui.luadrogen.Open.UICorner
+G2L["55"] = Instance.new("UICorner", G2L["54"]);
+
+
+
+-- StarterGui.luadrogen.Open.UIStroke
+G2L["56"] = Instance.new("UIStroke", G2L["54"]);
+G2L["56"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["56"]["Thickness"] = 1.5;
+G2L["56"]["Color"] = Color3.fromRGB(2, 2, 129);
+
+
+-- StarterGui.luadrogen.Open.ImageLabel
+G2L["57"] = Instance.new("ImageLabel", G2L["54"]);
+G2L["57"]["BorderSizePixel"] = 0;
+G2L["57"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+-- [ERROR] cannot convert ImageContent, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["57"]["Image"] = [[rbxassetid://131112153]];
+G2L["57"]["Size"] = UDim2.new(0, 48, 0, 48);
+G2L["57"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["57"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.luadrogen.Open.LocalScript
+G2L["58"] = Instance.new("LocalScript", G2L["54"]);
+
+
+
+-- StarterGui.luadrogen.Open.LocalScript
+G2L["59"] = Instance.new("LocalScript", G2L["54"]);
+
+
+
+-- StarterGui.luadrogen.Open.CenterFrame
+G2L["5a"] = Instance.new("LocalScript", G2L["54"]);
+G2L["5a"]["Name"] = [[CenterFrame]];
+
+
+-- StarterGui.luadrogen.Frame.CenterFrame
+local function C_3()
+local script = G2L["3"];
 	script.Parent.Position = UDim2.new(0.5, -script.Parent.Size.X.Offset / 2, 0.5, -script.Parent.Size.Y.Offset / 2)
-end
-local function COKNNL_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Minimize.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Minimize"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_3);
+-- StarterGui.luadrogen.Frame.Minimize.LocalScript
+local function C_b()
+local script = G2L["b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Visible = false
 		script.Parent.Parent.Parent.Open.Visible = true
 	end)
-end
-local function IKIIR_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OPS.Scripts.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_b);
+-- StarterGui.luadrogen.Frame.OPS.Scripts.TextButton.LocalScript
+local function C_15()
+local script = G2L["15"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local main = script.Parent.Parent.Parent.Parent
 		local list = { -- should be strings
@@ -648,20 +848,11 @@ local function IKIIR_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OP
 		end
 		main:WaitForChild(script.Parent.Parent.Name).Visible = true
 	end)
-end
-local function JXHJ_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OPS.Executor.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_15);
+-- StarterGui.luadrogen.Frame.OPS.Executor.TextButton.LocalScript
+local function C_1b()
+local script = G2L["1b"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local main = script.Parent.Parent.Parent.Parent
 		local list = { -- should be strings
@@ -673,20 +864,11 @@ local function JXHJ_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OPS
 		end
 		main:WaitForChild(script.Parent.Parent.Name).Visible = true
 	end)
-end
-local function JHTP_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OPS.RSpy.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton2"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_1b);
+-- StarterGui.luadrogen.Frame.OPS.RSpy.TextButton.LocalScript
+local function C_21()
+local script = G2L["21"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local main = script.Parent.Parent.Parent.Parent
 		local list = { -- should be strings
@@ -698,20 +880,11 @@ local function JHTP_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.OPS
 		end
 		main:WaitForChild(script.Parent.Parent.Name).Visible = true
 	end)
-end
-local function ECFT_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Scripts.TextButton.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_TextButton3"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_21);
+-- StarterGui.luadrogen.Frame.Scripts.TextButton.LocalScript
+local function C_28()
+local script = G2L["28"];
 	script.Parent.MouseButton1Click:Connect(function()
 		local URL = ''
 		local httpGET = ( request or syn and syn.request or function(url:string) return game:HttpGet(url) end or function(url:string) if game:GetService('HttpService').HttpEnabled == true then return game:GetService('HttpService'):GetAsync(url) end end )
@@ -731,22 +904,11 @@ local function ECFT_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Scr
 	webImport("ui/main")
 		]])()
 	end)
-end
-
---Content
-local function JJLW_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Executor.Script.Box.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Box"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_28);
+-- StarterGui.luadrogen.Frame.Executor.Script.Box.LocalScript
+local function C_2c()
+local script = G2L["2c"];
 	local highlighter = {}
 	local keywords = {
 		lua = {
@@ -918,20 +1080,11 @@ local function JJLW_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Exe
 	script.Parent:GetPropertyChangedSignal('Text'):Connect(function()
 		script.Parent:WaitForChild('TextLabel').Text = highlighter.run(script.Parent.Text)
 	end)
-end
-local function OMRZ_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Executor.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Executor1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_2c);
+-- StarterGui.luadrogen.Frame.Executor.LocalScript
+local function C_3a()
+local script = G2L["3a"];
 	local backdoor
 	local server = false
 	
@@ -1001,20 +1154,11 @@ local function OMRZ_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Exe
 			loadstring(box.Text)()
 		end
 	end)
-end
-local function LCZI_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Frame"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_3a);
+-- StarterGui.luadrogen.Frame.LocalScript
+local function C_3b()
+local script = G2L["3b"];
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -1054,20 +1198,11 @@ local function LCZI_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.Loc
 			update(input)
 		end
 	end)
-end
-local function EAPI_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSpy.Script.Box.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Box1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_3b);
+-- StarterGui.luadrogen.Frame.RSpy.Script.Box.LocalScript
+local function C_41()
+local script = G2L["41"];
 	local highlighter = {}
 	local keywords = {
 		lua = {
@@ -1239,20 +1374,11 @@ local function EAPI_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSp
 	script.Parent:GetPropertyChangedSignal('Text'):Connect(function()
 		script.Parent:WaitForChild('TextLabel').Text = highlighter.run(script.Parent.Text)
 	end)
-end
-local function JWBS_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSpy.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_RSpy1"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_41);
+-- StarterGui.luadrogen.Frame.RSpy.LocalScript
+local function C_43()
+local script = G2L["43"];
 	for _, v in ipairs(getinstances()) do
 		if v:IsA('RemoteEvent') then
 			if v.FireClient then
@@ -1296,72 +1422,36 @@ local function JWBS_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSp
 			end
 		end
 	end
-end
-local function DOEZS_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSpy.cc.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_cc"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_43);
+-- StarterGui.luadrogen.Frame.RSpy.cc.LocalScript
+local function C_4f()
+local script = G2L["4f"];
 	script.Parent.MouseButton1Click:Connect(function()
 		setclipboard(script.Parent.Parent:WaitForChild('Script'):WaitForChild('Box').Text)
 	end)
-end
-local function LSUFH_fake_script() -- Fake Script: StarterGui.luadrogen.Frame.RSpy.rc.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_rc"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_4f);
+-- StarterGui.luadrogen.Frame.RSpy.rc.LocalScript
+local function C_53()
+local script = G2L["53"];
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(script.Parent.Parent:WaitForChild('Script'):WaitForChild('Box').Text)()
 	end)
-end
-local function ZLAVEST_fake_script() -- Fake Script: StarterGui.luadrogen.Open.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Open"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_53);
+-- StarterGui.luadrogen.Open.LocalScript
+local function C_58()
+local script = G2L["58"];
 	script.Parent.MouseButton1Click:Connect(function()
 		script.Parent.Parent.Frame.Visible = true
 		script.Parent.Visible = false
 	end)
-end
-local function UUQZP_fake_script() -- Fake Script: StarterGui.luadrogen.Open.LocalScript
-    local script = Instance.new("LocalScript")
-    script.Name = "LocalScript"
-    script.Parent = Converted["_Open"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_58);
+-- StarterGui.luadrogen.Open.LocalScript
+local function C_59()
+local script = G2L["59"];
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -1401,36 +1491,13 @@ local function UUQZP_fake_script() -- Fake Script: StarterGui.luadrogen.Open.Loc
 			update(input)
 		end
 	end)
-end
-local function PRCBEE_fake_script() -- Fake Script: StarterGui.luadrogen.Open.CenterFrame
-    local script = Instance.new("LocalScript")
-    script.Name = "CenterFrame"
-    script.Parent = Converted["_Open"]
-    local req = require
-    local require = function(obj)
-        local fake = fake_module_scripts[obj]
-        if fake then
-            return fake()
-        end
-        return req(obj)
-    end
-
+end;
+task.spawn(C_59);
+-- StarterGui.luadrogen.Open.CenterFrame
+local function C_5a()
+local script = G2L["5a"];
 	script.Parent.Position = UDim2.new(0.5, -script.Parent.Size.X.Offset / 2, 0.5, -script.Parent.Size.Y.Offset / 2)
-end
+end;
+task.spawn(C_5a);
 
-coroutine.wrap(YZOS_fake_script)()
-coroutine.wrap(COKNNL_fake_script)()
-coroutine.wrap(IKIIR_fake_script)()
-coroutine.wrap(JXHJ_fake_script)()
-coroutine.wrap(JHTP_fake_script)()
-coroutine.wrap(ECFT_fake_script)()
-coroutine.wrap(JJLW_fake_script)()
-coroutine.wrap(OMRZ_fake_script)()
-coroutine.wrap(LCZI_fake_script)()
-coroutine.wrap(EAPI_fake_script)()
-coroutine.wrap(JWBS_fake_script)()
-coroutine.wrap(DOEZS_fake_script)()
-coroutine.wrap(LSUFH_fake_script)()
-coroutine.wrap(ZLAVEST_fake_script)()
-coroutine.wrap(UUQZP_fake_script)()
-coroutine.wrap(PRCBEE_fake_script)()
+return G2L["1"], require;
