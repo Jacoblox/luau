@@ -1381,7 +1381,7 @@ local function C_43()
 local script = G2L["43"];
 	for _, v in ipairs(game:GetDescendants()) do
 		if v:IsA('RemoteEvent') then
-			if v.FireClient then
+			if getrawmetable(v).FireClient then
 				hookfunction(orig, function(...)
 					local args = ...
 					local clone = script:WaitForChild('Event'):Clone()
@@ -1393,7 +1393,7 @@ local script = G2L["43"];
 				end)
 			end)
 			
-			if v.FireAllClient then
+				if getrawmetable(v).FireAllClient then
 				hookfunction(orig, function(...)
 					local args = ...
 					local clone = script:WaitForChild('Event'):Clone()
@@ -1406,7 +1406,7 @@ local script = G2L["43"];
 				end)	
 			end
 				
-			if v.FireServer then
+				if getrawmetable(v).FireServer then
 				hookfunction(orig, function(...)
 					local args = ...
 					local clone = script:WaitForChild('Event'):Clone()
@@ -1423,7 +1423,7 @@ local script = G2L["43"];
 		end
 		
 		if v:IsA('RemoteFunction') then
-			if v.InvokeClient then
+			if getrawmetable(v).InvokeClient then
 				hookfunction(orig, function(...)
 					local args = ...
 					local clone = script:WaitForChild('Event'):Clone()
@@ -1435,7 +1435,7 @@ local script = G2L["43"];
 					end)
 				end)
 	
-				if v.InvokeServer then
+				if getrawmetable(v).InvokeServer then
 					hookfunction(orig, function(...)
 						local args = ...
 						local clone = script:WaitForChild('Event'):Clone()
