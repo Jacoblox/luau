@@ -1379,43 +1379,64 @@ task.spawn(C_41);
 -- StarterGui.luadrogen.Frame.RSpy.LocalScript
 local function C_43()
 local script = G2L["43"];
+	local function returnStringedTable(tbl)
+		local result = {}
+		for _, v in ipairs(tbl) do
+			local str = typeof(v) == "string" and string.format("%q", v) or tostring(v)
+			table.insert(result, str)
+		end
+		return "{" .. table.concat(result, ", ") .. "}"
+	end
+	
 	for _, v in ipairs(game:GetDescendants()) do
 		if v:IsA('RemoteEvent') then
-			if getrawmetable(v).FireClient then
-				hookfunction(orig, function(...)
-					local args = ...
+			if v.FireClient then
+				local mt = getrawmetatable(Instance.new('RemoteEvent'))
+				setreadonly(mt, false)
+				local orig = mt.FireClient
+				hookfunction(mt.FireClient, function(...)
+					local args = {...}
 					local clone = script:WaitForChild('Event'):Clone()
 					clone.TextLabel.Text = v.Name
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-						%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Client')
+						%s:Fire%s(unpack(args))]], returnStringedTable(args), v:GetFullName(), 'Client')
+						return orig(unpack(args))
 				end)
 			end)
 			
-				if getrawmetable(v).FireAllClient then
-				hookfunction(orig, function(...)
-					local args = ...
+				if v.FireAllClient then
+					local mt = getrawmetatable(Instance.new('RemoteEvent'))
+					setreadonly(mt, false)
+					local orig = mt.FireAllClients
+				hookfunction(mt.FireAllClient, function(...)
+					local args = {...}
 					local clone = script:WaitForChild('Event'):Clone()
 					clone.TextLabel.Text = v.Name
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-					%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'AllClient')
-					end)
+					%s:Fire%s(unpack(args))]], returnStringedTable(args), v:GetFullName(), 'AllClient')
+						end)
+						return orig(unpack(args))
 				end)	
 			end
 				
-				if getrawmetable(v).FireServer then
-				hookfunction(orig, function(...)
-					local args = ...
+				if v.FireServer then
+					local mt = getrawmetatable(Instance.new('RemoteEvent'))
+					setreadonly(mt, false)
+					local orig = mt.FireServer
+					hookfunction(mt.FireServer, function(...)
+					local args = {...}
 					local clone = script:WaitForChild('Event'):Clone()
 					clone.TextLabel.Text = v.Name
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-				%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Server')
-					end)
+				%s:Fire%s(unpack(args))]], returnStringedTable(args), v:GetFullName(), 'Server')
+						end)
+						return orig(unpack(args))
 				end)	
 			end
 	
@@ -1423,28 +1444,37 @@ local script = G2L["43"];
 		end
 		
 		if v:IsA('RemoteFunction') then
-			if getrawmetable(v).InvokeClient then
-				hookfunction(orig, function(...)
-					local args = ...
+			if v.InvokeClient then
+				local mt = getrawmetatable(Instance.new('RemoteFunction'))
+				setreadonly(mt, false)
+				local orig = mt.InvokeClient
+				hookfunction(mt.InvokeClient, function(...)
+					local args = {...}
 					local clone = script:WaitForChild('Event'):Clone()
 					clone.TextLabel.Text = v.Name
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-						%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Client')
+						%s:Invoke%s(unpack(args))]], returnStringedTable(args), v:GetFullName(), 'Client')
 					end)
+					return orig(unpack(args))
 				end)
 	
-				if getrawmetable(v).InvokeServer then
-					hookfunction(orig, function(...)
-						local args = ...
+				if v.InvokeServer then
+					local mt = getrawmetatable(Instance.new('RemoteFunction'))
+					setreadonly(mt, false)
+					local orig = mt.InvokeServer
+					hookfunction(mt.InvokeServer, function(...)
+						
+						local args = {...}
 						local clone = script:WaitForChild('Event'):Clone()
 						clone.TextLabel.Text = v.Name
 						clone.Parent = script.Parent:WaitForChild('Remotes')
 						clone.ShowCode.MouseButton1Click:Connect(function()
 							script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-				%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Server')
+				%s:Invoke%s(unpack(args))]], returnStringedTable(args), v:GetFullName(), 'Server')
 						end)
+						return orig(unpack(args))
 					end)	
 				end
 	
