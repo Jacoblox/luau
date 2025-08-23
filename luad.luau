@@ -1379,7 +1379,7 @@ task.spawn(C_41);
 -- StarterGui.luadrogen.Frame.RSpy.LocalScript
 local function C_43()
 local script = G2L["43"];
-	for _, v in ipairs(getinstances()) do
+	for _, v in ipairs(game:GetDescendants()) do
 		if v:IsA('RemoteEvent') then
 			if v.FireClient then
 				hookfunction(orig, function(...)
@@ -1389,7 +1389,7 @@ local script = G2L["43"];
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-						%s:Fire%s(unpack(args))]], args, getcallingscript():GetFullName(), 'Client')
+						%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Client')
 				end)
 			end)
 			
@@ -1401,7 +1401,7 @@ local script = G2L["43"];
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-					%s:Fire%s(unpack(args))]], args, getcallingscript():GetFullName(), 'AllClient')
+					%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'AllClient')
 					end)
 				end)	
 			end
@@ -1414,10 +1414,39 @@ local script = G2L["43"];
 					clone.Parent = script.Parent:WaitForChild('Remotes')
 					clone.ShowCode.MouseButton1Click:Connect(function()
 						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
-				%s:Fire%s(unpack(args))]], args, getcallingscript():GetFullName(), 'Server')
+				%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Server')
 					end)
 				end)	
 			end
+	
+			end
+		end
+		
+		if v:IsA('RemoteFunction') then
+			if v.InvokeClient then
+				hookfunction(orig, function(...)
+					local args = ...
+					local clone = script:WaitForChild('Event'):Clone()
+					clone.TextLabel.Text = v.Name
+					clone.Parent = script.Parent:WaitForChild('Remotes')
+					clone.ShowCode.MouseButton1Click:Connect(function()
+						script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
+						%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Client')
+					end)
+				end)
+	
+				if v.InvokeServer then
+					hookfunction(orig, function(...)
+						local args = ...
+						local clone = script:WaitForChild('Event'):Clone()
+						clone.TextLabel.Text = v.Name
+						clone.Parent = script.Parent:WaitForChild('Remotes')
+						clone.ShowCode.MouseButton1Click:Connect(function()
+							script.Parent:WaitForChild('Script'):WaitForChild('Box').Text = string.format([[local args = %s
+				%s:Fire%s(unpack(args))]], args, v:GetFullName(), 'Server')
+						end)
+					end)	
+				end
 	
 			end
 		end
